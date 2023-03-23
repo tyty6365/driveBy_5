@@ -50,12 +50,15 @@
 
 <img src="https://w7.pngwing.com/pngs/432/356/png-transparent-black-monkey-chimpanzee-monkey-ape-gorilla-monkey-mammal-image-file-formats-animals.png" alt="Image" class="poop">
 
-<div>
-    <button class="button">Button 1</button>
-    <button class="button">Button 2</button>
-    <button class="button">Button 3</button>
-    <button class="button">Button 4</button>
+<form method="post" action="/myServlet">
+   <div>
+       <button id="myButton">Flowchart</button>
+
+       <button class="button2">Button 2</button>
+    <button class="button3">Button 3</button>
+    <button class="button4">Button4</button>
 </div>
+</form>
 
 <script>
     // Change the image every 5 seconds

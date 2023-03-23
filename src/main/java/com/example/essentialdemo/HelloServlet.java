@@ -23,13 +23,21 @@ public class HelloServlet extends HttpServlet {
 
         request.setAttribute("myVariable", num);
         RequestDispatcher view = request.getRequestDispatcher("WEB-INF/hello.jsp");
-
+        //RequestDispatcher view2 = request.getRequestDispatcher("WEB-INF/flowchart.jsp");
         view.forward(request, response);
 
 
 
 
     }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String buttonClicked = request.getParameter("myButton");
+        if (buttonClicked != null) {
+            response.sendRedirect("flowchart.jsp");
+        }
+    }
+
+
 
     public void destroy() {
     }
