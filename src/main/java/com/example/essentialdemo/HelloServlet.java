@@ -31,6 +31,16 @@ public class HelloServlet extends HttpServlet {
 //            request.setAttribute("myVariable", buttonClicked);
             RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/flowchart.jsp");
             dispatcher.forward(request, response);
+        String action = request.getParameter("action");
+        switch(action) {
+            case "processForm":
+                String pageName = request.getParameter("page1");
+                response.sendRedirect("WEB-INF/flowchart.jsp");
+                break;
+                default:
+                response.sendRedirect("error.html");
+                break;
+        }
 //        }
 
     }

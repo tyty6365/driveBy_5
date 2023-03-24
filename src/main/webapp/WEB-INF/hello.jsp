@@ -47,10 +47,13 @@
 
 <form method="post" action="hello-servlet">
     <div>
-        <button id="myButton" name = "myButton">Flowchart</button>
-        <button class="button2">Button 2</button>
-        <button class="button3">Button 3</button>
-        <button class="button4">Button4</button>
+<%--        <button id="myButton" name = "myButton">Flowchart</button>--%>
+<%--        <button class="button2">Button 2</button>--%>
+<%--        <button class="button3">Button 3</button>--%>
+<%--        <button class="button4">Button4</button>--%>
+        <input type="hidden" name="action" value="processForm">
+        <button type="submit" name="page1" value="WEB-INF/flowchart.jsp">Flowchart</button>
+        <button type="submit" name="page2" value="page2.html">Other Buttons</button>
     </div>
 </form>
 
