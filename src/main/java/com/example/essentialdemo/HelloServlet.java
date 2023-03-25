@@ -29,8 +29,8 @@ public class HelloServlet extends HttpServlet {
 //        if (buttonClicked != "" ){
 //
 //            request.setAttribute("myVariable", buttonClicked);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/flowchart.jsp");
-            dispatcher.forward(request, response);
+           RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/flowchart.jsp");
+          dispatcher.forward(request, response);
         String action = request.getParameter("action");
         switch(action) {
             case "processForm":
