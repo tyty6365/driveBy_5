@@ -37,7 +37,7 @@
         border: 5;
         color: #fff;
         cursor: pointer;
-        font-family: Century Gothic, Fantasy;
+        font-family: monospace, Fantasy;
 
         font-size: 20px;
         padding: 80px 60px;
