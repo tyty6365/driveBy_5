@@ -28,7 +28,7 @@
     }
 
     .card-header {
-        background-color: violet;
+        background-color: rgb(213, 184, 255);
         font-size: 20px;
         font-weight: bold;
         padding: 10px;
@@ -53,7 +53,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        background-color: violet;
+        background-color:rgb(213, 184, 255);
 
     }
 
@@ -64,7 +64,7 @@
     }
     a {
         font-family: Arial, sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
         color: yellow;
         display: block;
@@ -78,9 +78,19 @@
     }
     .coreclasses{
         font-family: Arial, sans-serif;
-        font-size: 16px;
+        font-size: 25px;
         text-align: center;
-        color: blue;
+        color: rgb(255,215,0);
+        display: block;
+        margin: 20px;
+        position:relative;
+
+    }
+    .Humanities{
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(255,215,0);
         display: block;
         margin: 20px;
         position:relative;
@@ -109,7 +119,7 @@
 
 <div class="card-container">
     <div class="card">
-        <div class="card-header">CSC 1350</div>
+        <div class="card-header">ME 1212</div>
         <div class="card-body">Time<br>
             Days:
             <br>
@@ -164,6 +174,61 @@
     <div class="card">
         <div class="card-header">Card Header</div>
         <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+</div>
+<div class ="Humanities">
+    Humanities
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">CSC 1350</div>
+        <div class="card-body">Time<br>
+            Days:
+            <br>
+        </div>
+        <button class="add-button">Add Class</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Time<br>
+            Days:</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">CSC 1350</div>
+        <div class="card-body">Time<br>
+            Days:
+            <br>
+        </div>
+        <button class="add-button">Add Class</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Time<br>
+            Days:</div>
         <button class="add-button">Add</button>
     </div>
     <div class="card">
