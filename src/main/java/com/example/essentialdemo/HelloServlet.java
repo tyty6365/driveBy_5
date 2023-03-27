@@ -7,6 +7,9 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+import java.io.FileWriter;
+import java.io.IOException;
+//import org.json.simple.JSONObject;
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
@@ -48,3 +51,23 @@ public class HelloServlet extends HttpServlet {
     public void destroy() {
     }
 }
+
+//public class CreatingJSONDocument {
+//    public static void main(String args[]) {
+//        //Creating a JSONObject object
+//        JSONObject jsonObject = new JSONObject();
+//        //Inserting key-value pairs into the json object
+//        jsonObject.put("ID", "898129754");
+//        jsonObject.put("First_Name", "Mimi");
+//        jsonObject.put("Last_Name", "Baral");
+//        try {
+//            FileWriter file = new FileWriter("E:/output.json");
+//            file.write(jsonObject.toJSONString());
+//            file.close();
+//        } catch (IOException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+//        System.out.println("JSON file created: " + jsonObject);
+//    }
+//}
