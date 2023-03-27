@@ -2,9 +2,10 @@
   Created by IntelliJ IDEA.
   User: mimic
   Date: 3/25/2023
-  Time: 2:14 PM
+  Time: 2:26 PM
   To change this template use File | Settings | File Templates.
 --%>
+<!DOCTYPE html>
 -<html>
 <style>
   html, body {
@@ -100,7 +101,7 @@
 <body>
 
 
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_eec_flowchart.pdf"> Computer Enginnering FlowChart 23/24 </a>
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ce_flowchart.pdf"> Civil Enginnering FlowChart 23/24 </a>
 <div class ="coreclasses">
   <strong>Core Classes</strong>
 </div>
@@ -179,3 +180,4 @@
 <script>
 </script>
 </html>
+
