@@ -10,6 +10,7 @@
     html, body {
         height: 100%;
     }
+
     .card-container {
         display: flex;
         flex-wrap: wrap;
@@ -40,7 +41,6 @@
         background-color: white;
 
 
-
     }
 
     .add-button {
@@ -60,6 +60,7 @@
         background-color: purple;
         color: white;
     }
+
     a {
         font-family: Arial, sans-serif;
         font-size: 16px;
@@ -71,26 +72,28 @@
 
 
     }
+
     a:hover {
         color: red;
     }
-    .coreclasses{
+
+    .coreclasses {
         font-family: Arial, sans-serif;
         font-size: 16px;
         text-align: center;
         color: violet;
         display: block;
         margin: 20px;
-        position:relative;
+        position: relative;
 
     }
 
-    body{
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('https://lsusports.net/imgproxy/kpuLx-hW4m0tdJpUdlcdIvhGpsgunEbmTyqgyx2BV_U/fit/3840/2160/ce/0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2xzdXNwb3J0cy1jb20vMjAyMS8wOC83OWY3YjUwYy1taWtlX3ZpaV90aWdlcjExNzkzLmpwZw.png');
-        height:100vh;
-        background-size:cover;
-        background-position:center center;
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
         position: relative;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -100,8 +103,9 @@
 <body>
 
 
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ee_flowchart.pdf"> Electrical Enginnering FlowChart 23/24 </a>
-<div class ="coreclasses">
+<a href="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ee_flowchart.pdf"> Electrical Enginnering
+    FlowChart 23/24 </a>
+<div class="coreclasses">
     <strong>Core Classes</strong>
 </div>
 
@@ -117,7 +121,8 @@
     <div class="card">
         <div class="card-header">Card Header</div>
         <div class="card-body">Time<br>
-            Days:</div>
+            Days:
+        </div>
         <button class="add-button">Add</button>
     </div>
     <div class="card">
