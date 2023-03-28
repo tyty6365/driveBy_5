@@ -190,6 +190,61 @@
         <button class="add-button">Add</button>
     </div>
 </div>
+<div class="Humanities">
+    Humanities
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">CSC 1350</div>
+        <div class="card-body">Time<br>
+            Days:
+            <br>
+        </div>
+        <button class="add-button">Add Class</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Time<br>
+            Days:</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">CSC 1350</div>
+        <div class="card-body">Time<br>
+            Days:
+            <br>
+        </div>
+        <button class="add-button">Add Class</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Time<br>
+            Days:</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+    </div>
+</div>
 </body>
 <script>
 </script>
