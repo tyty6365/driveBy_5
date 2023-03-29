@@ -1,0 +1,33 @@
+[
+{
+  "LSU-ID": "898129754",
+  "Name": "Mimi",
+  "Classes": {}
+},
+{
+  "LSU-ID": "894741170",
+  "Name": "Miciah",
+  "Classes": {}
+},
+  {
+    "LSU-ID": "892489548",
+    "Name": "Luis",
+    "Classes": {}
+  },
+  {
+  "LSU-ID": "894563332",
+  "Name": "William",
+  "Classes": {}
+  },
+  {
+    "LSU-ID": "890931778",
+    "Name": "Ariel",
+    "Classes": {}
+  },
+  {
+    "LSU-ID": "898350377",
+   "Name": "Tyler",
+   "Classes": {}
+  }
+
+]
