@@ -8,8 +8,10 @@
 -<html>
 <style>
   html, body {
-    height: 100%;
+  height:
+    100%;
   }
+
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -26,11 +28,11 @@
   }
 
   .card-header {
-    background-color: hsl(260, 60%, 60%);
+    background-color: rgb(213, 184, 255);
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
-    border-bottom: black;
+    border-bottom: 1px solid black;
 
   }
 
@@ -40,18 +42,17 @@
     background-color: white;
 
 
-
   }
 
   .add-button {
     display: block;
     margin: 10px auto;
     padding: 5px 10px;
-
+    background-color: lightblue;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: violet;
+    background-color: rgb(213, 184, 255);
 
   }
 
@@ -60,9 +61,10 @@
     background-color: purple;
     color: white;
   }
+
   a {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     color: yellow;
     display: block;
@@ -71,26 +73,39 @@
 
 
   }
+
   a:hover {
     color: red;
   }
-  .coreclasses{
+
+  .coreclasses {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 25px;
     text-align: center;
-    color: violet;
+    color: rgb(255, 215, 0);
     display: block;
     margin: 20px;
-    position:relative;
+    position: relative;
 
   }
 
-  body{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),
+  .Humanities {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(255, 215, 0);
+    display: block;
+    margin: 20px;
+    position: relative;
+
+
+  }
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('https://lsusports.net/imgproxy/kpuLx-hW4m0tdJpUdlcdIvhGpsgunEbmTyqgyx2BV_U/fit/3840/2160/ce/0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2xzdXNwb3J0cy1jb20vMjAyMS8wOC83OWY3YjUwYy1taWtlX3ZpaV90aWdlcjExNzkzLmpwZw.png');
-    height:100vh;
-    background-size:cover;
-    background-position:center center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;

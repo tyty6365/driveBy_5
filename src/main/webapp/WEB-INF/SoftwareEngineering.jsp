@@ -8,10 +8,16 @@
 <!DOCTYPE html>
 -<html>
 <style>
+    html, body {
+        height:
+                100%;
+    }
+
     .card-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
     }
 
     .card {
@@ -19,18 +25,24 @@
         margin-bottom: 20px;
         border: 1px solid black;
         border-radius: 5px;
+        background-color: white;
     }
 
     .card-header {
-        background-color: violet;
+        background-color: rgb(213, 184, 255);
         font-size: 20px;
         font-weight: bold;
         padding: 10px;
         border-bottom: 1px solid black;
+
     }
 
     .card-body {
         padding: 10px;
+        font-weight: bold;
+        background-color: white;
+
+
     }
 
     .add-button {
@@ -41,23 +53,64 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        background-color: rgb(213, 184, 255);
+
     }
+
 
     .add-button:hover {
-        background-color: blue;
+        background-color: purple;
         color: white;
     }
+
     a {
         font-family: Arial, sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
-        color: black;
+        color: yellow;
         display: block;
         margin: 20px;
+        font-weight: bold;
+
 
     }
+
     a:hover {
         color: red;
+    }
+
+    .coreclasses {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(255, 215, 0);
+        display: block;
+        margin: 20px;
+        position: relative;
+
+    }
+
+    .Humanities {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(255, 215, 0);
+        display: block;
+        margin: 20px;
+        position: relative;
+
+
+    }
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://lsusports.net/imgproxy/kpuLx-hW4m0tdJpUdlcdIvhGpsgunEbmTyqgyx2BV_U/fit/3840/2160/ce/0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2xzdXNwb3J0cy1jb20vMjAyMS8wOC83OWY3YjUwYy1taWtlX3ZpaV90aWdlcjExNzkzLmpwZw.png');
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
     }
 </style>
 <body>
