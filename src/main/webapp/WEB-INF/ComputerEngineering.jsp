@@ -115,7 +115,7 @@
 <body>
 
 
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_eec_flowchart.pdf"> Computer Enginnering FlowChart 23/24 </a>
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_eec_flowchart.pdf"> Computer Engineering FlowChart 23-24 </a>
 <div class ="coreclasses">
   <strong>Core Classes</strong>
 </div>

@@ -116,7 +116,7 @@
 <body>
 
 
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ce_flowchart.pdf"> Civil Enginnering FlowChart 23/24 </a>
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ce_flowchart.pdf"> Civil Engineering FlowChart 23-24 </a>
 <div class ="coreclasses">
   <strong>Core Classes</strong>
 </div>
