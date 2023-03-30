@@ -117,7 +117,7 @@
 <body>
 
 
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_cyb_flowchart.pdf"> CyberSecurity FlowChart 23/24 </a>
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_cyb_flowchart.pdf"> CyberSecurity FlowChart 23-24 </a>
 <div class ="coreclasses">
     <strong>Core Classes</strong>
 </div>

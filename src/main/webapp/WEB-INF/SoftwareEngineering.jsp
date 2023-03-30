@@ -114,7 +114,7 @@
     }
 </style>
 <body>
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_seg_flowchart.pdf"> Computer Science FlowChart 23/24 </a>
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_seg_flowchart.pdf"> Computer Science FlowChart 23-24 </a>
 
 <div class="card-container">
     <div class="card">

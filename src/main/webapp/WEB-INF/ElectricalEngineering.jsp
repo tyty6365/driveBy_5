@@ -115,7 +115,7 @@
 <body>
 
 
-<a href="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ee_flowchart.pdf"> Electrical Enginnering
+<a href="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ee_flowchart.pdf"> Engineering FlowChart 23-24
     FlowChart 23/24 </a>
 <div class="coreclasses">
     <strong>Core Classes</strong>
