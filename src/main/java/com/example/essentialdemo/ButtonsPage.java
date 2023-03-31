@@ -1,6 +1,5 @@
 package com.example.essentialdemo;
 
-import java.io.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -9,7 +8,7 @@ import java.io.IOException;
 //import org.json.simple.JSONObject;
 
 @WebServlet("/hello-servlet")
-public class HelloServlet extends HttpServlet {
+public class ButtonsPage extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {}
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

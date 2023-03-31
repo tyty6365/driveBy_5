@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 @WebServlet(name = "SecondHelloServlet", value = "/SecondHelloServlet")
-public class SecondHelloServlet extends HttpServlet {
+public class HomePage extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
 
@@ -31,7 +31,6 @@ public class SecondHelloServlet extends HttpServlet {
                         break;
                     }
                 }
-
                 // Close the file reader and buffered reader
                 br.close();
                 fr.close();
@@ -46,6 +45,8 @@ public class SecondHelloServlet extends HttpServlet {
 
                     System.out.println("Match found!");
                 } else {
+                    response.sendRedirect("WEB-INF/ErrorPage.jsp");
+
                     System.out.println("No match found.");
                 }
 
