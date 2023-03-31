@@ -41,7 +41,6 @@ public class HomePage extends HttpServlet {
                     request.setAttribute("myVariable", inputValue);
                     RequestDispatcher view = request.getRequestDispatcher("WEB-INF/hello.jsp");
                     view.forward(request, response);
-                    //response.sendRedirect("WEB-INF/hello.jsp");
 
                     System.out.println("Match found!");
                 } else {
