@@ -9,7 +9,6 @@ import java.io.IOException;
 
 @WebServlet("/hello-servlet")
 public class ButtonsPage extends HttpServlet {
-
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {}
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

@@ -14,7 +14,6 @@ public class HomePage extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
 // Get the value of the input text element
             String inputValue = request.getParameter("input");
             boolean matchFound = false;
