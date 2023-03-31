@@ -99,26 +99,11 @@
     </style>
 </head>
 
-<form action="hello-servlet" method="get">
-    <input type="text" name="number">
+<form action="SecondHelloServlet" method="post">
+    <input type="text" name="input" id="input">
     <button type="submit">Submit</button>
 </form>
 
-
-<form method="post" action="hello-servlet">
-    <div class="button-container">
-
-
-        <button class="button" type="submit" name="page" value="WEB-INF/index.jsp">HomePage</button>
-
-        <button  class="button" type="submit" name="page" value="WEB-INF/IT_Support.jsp">IT Support</button>
-
-        <button  class="button" type="submit" name="page" value="WEB-INF/FAQ.jsp">Q/A Forum</button>
-
-        <button class="button" type="submit" name="page" value="WEB-INF/flowchart.jsp">Flowchart</button>
-
-    </div>
-</form>
 
 <div class="white-box">
     <h1>Welcome to Essential Scheduling</h1>

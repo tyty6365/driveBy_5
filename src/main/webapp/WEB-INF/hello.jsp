@@ -7,9 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-
-
-
 <html>
 <head>
 </Head>
@@ -17,6 +14,7 @@
 <br>
 </Body>
 <title>Page Title</title>
+
 
     <style>
         /* Center the image */
@@ -111,6 +109,8 @@
     </style>
 </head>
 <body>
+
+
 <div class="top-container">
     <h1><center>Welcome! Please Use the TaskBar Below as a Guide.</center></h1>
 </div>
