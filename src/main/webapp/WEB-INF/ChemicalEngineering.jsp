@@ -119,34 +119,35 @@
 <div class ="coreclasses">
     <strong>Core Classes</strong>
 </div>
-
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">CSC 1350</div>
-        <div class="card-body">Time<br>
-            Days:
-            <br>
+<form action ="ChemicalEngineeringServlet" method="post">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header" id="CHE1100">CHE 1100</div>
+            <div class="card-body">Time<br>
+                Days:
+                <br>
+            </div>
+            <button class="add-button" id="CHE-1100" type ="submit" value="CHE 1100" name="CHEENG">Add Class</button>
         </div>
-        <button class="add-button">Add Class</button>
+
+        <div class="card">
+            <div class="card-header">Chem 1202</div>
+            <div class="card-body">Time<br>
+                Days:</div>
+            <button class="add-button" id="CHEM-1202" type ="submit" value="CHEM 1202" name="CHEENG">Add Class</button>
+        </div>
+        <div class="card">
+            <div class="card-header">CHEM 2171</div>
+            <div class="card-body">Card Body</div>
+            <button class="add-button" id="CHEM-2171" type ="submit" value="CHEM 2171" name="CHEENG">Add Class</button>
+        </div>
+        <div class="card">
+            <div class="card-header">CHEM 2176</div>
+            <div class="card-body">Card Body</div>
+            <button class="add-button" id="CHEM-2176" type ="submit" value="CHEM 2176" name="CHEENG">Add Class</button>
+        </div>
     </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Time<br>
-            Days:</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="card-container">
+    <div class="card-container">
     <div class="card">
         <div class="card-header">Card Header</div>
         <div class="card-body">Card Body</div>
@@ -245,6 +246,7 @@
         <button class="add-button">Add</button>
     </div>
 </div>
+</form>
 </body>
 <script>
 </script>

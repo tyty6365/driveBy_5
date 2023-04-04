@@ -18,7 +18,7 @@ public class HomePage extends HttpServlet {
             String inputValue = request.getParameter("input");
             boolean matchFound = false;
             try {
-                File file = new File("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/database1.txt");
+                File file = new File("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\database1.txt");
 
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
