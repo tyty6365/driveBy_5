@@ -120,22 +120,22 @@
 <div class="coreclasses">
     <strong>Core Classes</strong>
 </div>
-
+<form id="myForm" action="ElectricalEngineering" method="post">
 <div class="card-container">
     <div class="card">
-        <div class="card-header">CSC 1350</div>
+        <div class="card-header">EE 1810</div>
         <div class="card-body">Time<br>
             Days:
             <br>
         </div>
-        <button class="add-button">Add Class</button>
+        <button id="EE1810" type="button" data-value="false" value="EE 1810" class="add-button" name ="button">ADD CLASS</button>
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
+        <div class="card-header">EE 2741</div>
         <div class="card-body">Time<br>
             Days:
         </div>
-        <button class="add-button">Add</button>
+        <button id="EE2741" type="button" data-value="false" value="EE 2741" class="add-button" name="button">ADD CLASS</button>
     </div>
     <div class="card">
         <div class="card-header">Card Header</div>
@@ -192,7 +192,24 @@
         <button class="add-button">Add</button>
     </div>
 </div>
+</form>
+<%--<script>--%>
+<%--    var form = document.getElementById("myForm");--%>
+<%--    var buttons = document.querySelectorAll(".add-button[data-value='false']");--%>
+
+<%--    for (var i = 0; i < buttons.length; i++) {--%>
+<%--        buttons[i].addEventListener("click", function() {--%>
+<%--            // Check the button data-value--%>
+<%--            if (this.getAttribute("data-value") === "false") {--%>
+<%--                // Set the button data-value to true--%>
+<%--                this.setAttribute("data-value", "true");--%>
+
+<%--                // Submit the form data to the servlet--%>
+<%--                form.submit();--%>
+<%--            }--%>
+<%--        });--%>
+<%--    }--%>
+<%--</script>--%>
 </body>
-<script>
-</script>
+
 </html>

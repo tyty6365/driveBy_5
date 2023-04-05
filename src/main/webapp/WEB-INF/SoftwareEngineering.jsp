@@ -115,6 +115,7 @@
 </style>
 <body>
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_seg_flowchart.pdf"> Computer Science FlowChart 23-24 </a>
+<a href ="Software.jsp"> Your Schedule </a>
 
 <div class="card-container">
     <div class="card">
@@ -123,7 +124,40 @@
             Days:
             <br>
         </div>
+        <button onclick="addClass('CSC 1350')" class="add-button" value ="1350">Add Class</button>
+
+    </div>
+    <div class="card">
+        <div class="card-header">Csc 1351</div>
+        <div class="card-body">Card Body</div>
+        <button onclick="addClass('CSC 1351')" class="add-button" value = "1351">Add</button>
+
+    </div>
+    <div class="card">
+        <div class="card-header">CSC 3102</div>
+        <div class="card-body">Card Body</div>
+        <form  action="SoftwareEngineeringServlet" method="post">
+        <button name = "CSC3102" value ="CSC 3102"  class="add-button" >Add</button>
+<%--        <script>--%>
+<%--            const buttonTest = document.getElementByID("test");--%>
+<%--            buttonTest.addEventListener('click', () => {--%>
+<%--               window.open("Software.jsp");--%>
+<%--            });--%>
+<%--        </script>--%>
+        </form>
+    </div>
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
         <button class="add-button">Add</button>
+    </div>
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button">Add</button>
+
     </div>
     <div class="card">
         <div class="card-header">Card Header</div>
@@ -163,29 +197,51 @@
         <button class="add-button">Add</button>
     </div>
 </div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-</body>
 <script>
+    // function addClass(classCode) {
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open('POST', 'SoftwareEngineeringServlet', true);
+    //     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    //     xhr.onreadystatechange = function() {
+    //         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+    //             console.log('Data sent successfully');
+    //         }
+    //     };
+    //     xhr.send('classCode=' + encodeURIComponent(classCode));
+    // }
+
+    function addClass(classCode) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'SoftwareEngineeringServlet', true);
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if (this.readyState === XMLHttpRequest.DONE) {
+                if (this.status === 200) {
+                    console.log('Data sent successfully');
+                    // Redirect to new page
+                    // window.location.href = 'WEB-INF/Software.jsp';
+                } else {
+                    console.log('Error: ' + this.status);
+                    console.log("Faield");
+                }
+            }
+        };
+        xhr.send('classCode=' + encodeURIComponent(classCode));
+    }
+
+
+    // function sendData() {
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open('POST', 'SoftwareEngineeringServlet', true);
+    //     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    //     xhr.onreadystatechange = function() {
+    //         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+    //             console.log('Data sent successfully');
+    //         }
+    //     };
+    //     xhr.send('sendData=true');
+    // }
 </script>
+</body>
+
 </html>
