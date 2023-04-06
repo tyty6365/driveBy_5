@@ -134,18 +134,19 @@
         <div class="card-header">CSC 3380</div>
         <div class="card-body">Time<br>
             Days:</div>
-        <button class="add-button" value = "CSC3380" name="ME2">Add Class</button>
+        <button class="add-button" value = "CSC3380" name="ME">Add Class</button>
     </div>
     <div class="card">
         <div class="card-header">CSC 4040</div>
         <div class="card-body">Card Body</div>
-        <button class="add-button" value = "CSC4040" name="ME3">Add Class</button>
+        <button class="add-button" value = "CSC4040" name="ME">Add Class</button>
     </div>
     <div class="card">
         <div class="card-header">CSC 1111</div>
         <div class="card-body">Card Body</div>
-        <button class="add-button" value = "CSC1111" name="ME4">Add Class</button>
+        <button class="add-button" value = "CSC1111" name="ME">Add Class</button>
     </div>
+    <button class="add-button" value = "schedule" name="ME">See Schedule</button>
 </div>
 </form>
 

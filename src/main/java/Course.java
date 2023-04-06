@@ -12,7 +12,7 @@ public class Course {
     boolean morning;
     double end;
     boolean endMorning;
-    boolean[] days = new boolean[6];
+    boolean[] days = new boolean[5];
     String room;
     String building;
     String instructor;

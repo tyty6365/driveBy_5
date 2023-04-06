@@ -68,6 +68,11 @@ public class User {
             //goes through each individual scheduled class's days
             for(int j = 0; j < scheduledClasses.get(i).cTime.daysOfWeek.length; j++){
                 if(wantsToAdd.cTime.daysOfWeek[j] == scheduledClasses.get(i).cTime.daysOfWeek[j]){
+
+                    System.out.println(j+"wants to add" + wantsToAdd.cTime.daysOfWeek[j]);
+                    System.out.println(j+"scheduledClasses" + scheduledClasses.get(i).cTime.daysOfWeek[j]);
+
+
                     boolean passedDayComparison = dayComparison(wantsToAdd, scheduledClasses.get(i));
                     if(!passedDayComparison){
                         return false;
@@ -109,12 +114,6 @@ public class User {
             return false;
         }
         if(addStart == scheduledStart && addEnd > scheduledEnd){
-            return false;
-        }
-        if(addStart == scheduledStart && addEnd < scheduledEnd){
-            return false;
-        }
-        if(addEnd == scheduledEnd && addStart > scheduledStart){
             return false;
         }
         if(addEnd == scheduledEnd && addStart < scheduledStart){

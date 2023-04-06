@@ -3,6 +3,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet(name = "SecondHelloServlet", value = "/SecondHelloServlet")
 public class HomePage extends HttpServlet {
@@ -23,11 +24,25 @@ public class HomePage extends HttpServlet {
 
 
             UserFileConvertor w = new UserFileConvertor("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + username);
-            matchFound = true;
-            getServletContext().setAttribute("myVariable",username);
+            ArrayList<Class> wClasses = new ArrayList<>();
+            for (int i = 0; i < w.getScheduledClasses().size(); i++) {
+                String testClass = w.getScheduledClasses().get(i);
+                Course a = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + testClass);
+                wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
+            }
+            User willc = new User(w.getUsername(), w.getPassword(), w.getFinishedClasses());
+            for (int i = 0; i < wClasses.size(); i++) {
+                willc.fileAddToSchedule(wClasses.get(i));
+            }
+
+            request.setAttribute("scheduled",willc.scheduledClasses);
 
 
-            getServletContext().setAttribute("sharedObject", username);
+            getServletContext().setAttribute("User",willc);
+            getServletContext().setAttribute("Username",username);
+            if(w.getUsername().equals(username)){
+                matchFound = true;
+            }
             if(w.getPassword().equals(password)){
                 passwordMatch = true;
             }

@@ -18,31 +18,25 @@ public class MechanicalEngineeringServlet extends HttpServlet {
 
 
         String meClasses = request.getParameter("ME");
-        System.out.println(meClasses);
-        String username = (String) getServletContext().getAttribute("myVariable");
-        System.out.println(username);
+        if(meClasses.equals("schedule")){
+            RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/Software.jsp");
+            dispatcherr.forward(request, response);
+        }else {
+            String username = (String) getServletContext().getAttribute("Username");
+            User willc = (User) getServletContext().getAttribute("User");
+            Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + meClasses);
+            Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
+            willc.addClassToSchedule(newClass);
+
+            ArrayList<Class> pp = willc.scheduledClasses;
+            System.out.println(pp.toString());
+            request.setAttribute("pp", pp);
 
 
 
-        UserFileConvertor w = new UserFileConvertor("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + username);//change when put into website
-        ArrayList<Class> wClasses = new ArrayList<>();
-        for (int i = 0; i < w.getScheduledClasses().size(); i++) {
-            String testClass = w.getScheduledClasses().get(i);
-            Course a = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + testClass);
-            wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
+            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
+            dispatcherrr.forward(request, response);
         }
-        User willc = new User(w.getUsername(), w.getPassword(), w.getFinishedClasses());
-        for (int i = 0; i < wClasses.size(); i++) {
-            willc.fileAddToSchedule(wClasses.get(i));
-        }
-        Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + meClasses);
-        Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
-        willc.addClassToSchedule(newClass);
-        RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/CyberSecurity.jsp");
-        dispatcherrr.forward(request, response);
     }
-
-
-
-    }
+}
 
