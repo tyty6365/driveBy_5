@@ -116,6 +116,9 @@
 <body>
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_seg_flowchart.pdf"> Computer Science FlowChart 23-24 </a>
 <a href ="Software.jsp"> Your Schedule </a>
+<form  action="SoftwareEngineeringServlet" method="post">
+    <button name = "CSC3102" value ="CSC 3102"  class="add-button" >Click here to see your schedule </button>
+</form>
 
 <div class="card-container">
     <div class="card">
@@ -124,55 +127,47 @@
             Days:
             <br>
         </div>
-        <button onclick="addClass('CSC 1350')" class="add-button" value ="1350">Add Class</button>
+        <button onclick="addClass('CSC 1350', this);" class="add-button" value ="1350">Add Class</button>
 
     </div>
     <div class="card">
         <div class="card-header">Csc 1351</div>
         <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 1351')" class="add-button" value = "1351">Add</button>
+        <button onclick="addClass('CSC 1351', this);" class="add-button" value = "1351">Add</button>
 
     </div>
     <div class="card">
         <div class="card-header">CSC 3102</div>
         <div class="card-body">Card Body</div>
-        <form  action="SoftwareEngineeringServlet" method="post">
-        <button name = "CSC3102" value ="CSC 3102"  class="add-button" >Add</button>
-<%--        <script>--%>
-<%--            const buttonTest = document.getElementByID("test");--%>
-<%--            buttonTest.addEventListener('click', () => {--%>
-<%--               window.open("Software.jsp");--%>
-<%--            });--%>
-<%--        </script>--%>
-        </form>
+        <button onclick="addClass('CSC 3102', this);" class="add-button" value = "3102">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
+        <div class="card-header">CSC 2262</div>
         <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
+        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add Class</button>
     </div>
 </div>
 <div class="card-container">
     <div class="card">
-        <div class="card-header">Card Header</div>
+        <div class="card-header">CSC 3501</div>
         <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
+        <button onclick="addClass('CSC 3501', this);" class="add-button" value ="3501">Add Class</button>
 
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
+        <div class="card-header">CSC 2259</div>
         <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
+        <button onclick="addClass('CSC 2259', this);" class="add-button" value ="2259">Add Class</button>
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
+        <div class="card-header">CSC 2262</div>
         <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
+        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add Class</button>
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
+        <div class="card-header">CSC 4101</div>
         <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
+        <button onclick="addClass('CSC 4101', this);" class="add-button" value ="4101">Add Class</button>
     </div>
 </div>
 <div class="card-container">
@@ -210,7 +205,8 @@
     //     xhr.send('classCode=' + encodeURIComponent(classCode));
     // }
 
-    function addClass(classCode) {
+    function addClass(classCode, button) {
+        button.disabled = true; // Disable only the clicked button
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'SoftwareEngineeringServlet', true);
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -222,13 +218,12 @@
                     // window.location.href = 'WEB-INF/Software.jsp';
                 } else {
                     console.log('Error: ' + this.status);
-                    console.log("Faield");
+                    console.log("Failed");
                 }
             }
         };
-        xhr.send('classCode=' + encodeURIComponent(classCode));
+        xhr.send('classCode=' + classCode); // Send data to server
     }
-
 
     // function sendData() {
     //     var xhr = new XMLHttpRequest();
