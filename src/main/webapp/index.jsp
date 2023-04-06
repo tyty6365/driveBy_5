@@ -100,8 +100,15 @@
 </head>
 
 <form action="SecondHelloServlet" method="post">
-    <input type="text" name="input" id="input">
-    <button type="submit">Submit</button>
+    <label for="username">Enter your 89 number:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <input type="submit" value="Submit">
+<%--    <input type="text" name="input" id="input">--%>
+<%--    <button type="submit">Submit</button>--%>
 </form>
 
 

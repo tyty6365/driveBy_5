@@ -116,136 +116,40 @@
 <body>
 
 
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_che_flowchart.pdf"> Chemical Engineering FlowChart 23-24 </a>
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_me_w_4yr_crit_path_phaseone_flowchart.pdf"> Mechanical Engineering FlowChart 23-24 </a>
 <div class ="coreclasses">
     <strong>Core Classes</strong>
 </div>
+<form action = "MechanicalEngineeringServlet" method = post>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">CSC 2262</div>
+        <div class="card-body">Time<br>
+            Days:
+            <br>
+        </div>
+        <button class="add-button" value = "CSC2262" name="ME">Add Class</button>
+    </div>
+    <div class="card">
+        <div class="card-header">CSC 3380</div>
+        <div class="card-body">Time<br>
+            Days:</div>
+        <button class="add-button" value = "CSC3380" name="ME2">Add Class</button>
+    </div>
+    <div class="card">
+        <div class="card-header">CSC 4040</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button" value = "CSC4040" name="ME3">Add Class</button>
+    </div>
+    <div class="card">
+        <div class="card-header">CSC 1111</div>
+        <div class="card-body">Card Body</div>
+        <button class="add-button" value = "CSC1111" name="ME4">Add Class</button>
+    </div>
+</div>
+</form>
 
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">CSC 1350</div>
-        <div class="card-body">Time<br>
-            Days:
-            <br>
-        </div>
-        <button class="add-button">Add Class</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Time<br>
-            Days:</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="Humanities">
-    Humanities
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">CSC 1350</div>
-        <div class="card-body">Time<br>
-            Days:
-            <br>
-        </div>
-        <button class="add-button">Add Class</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Time<br>
-            Days:</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">CSC 1350</div>
-        <div class="card-body">Time<br>
-            Days:
-            <br>
-        </div>
-        <button class="add-button">Add Class</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Time<br>
-            Days:</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
+
 </body>
 <script>
 </script>

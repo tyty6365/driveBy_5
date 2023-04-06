@@ -1,0 +1,16 @@
+Name:CSC4040
+Section:5
+Credit Hours:1
+Start:4
+Morning?:am
+End:5
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1202
+Building:PATRICK TAYLOR HALL
+Instructor:Brener N
+Prereqs:CSC1351
