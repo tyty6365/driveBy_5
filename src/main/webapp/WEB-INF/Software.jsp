@@ -3,6 +3,7 @@
 <%@ page import="java.lang.reflect.Array" %>
 <%@ page import="com.example.essentialdemo.Class" %>
 <%@ page import="com.example.essentialdemo.User" %>
+<%@ page import="com.example.essentialdemo.DropCourse" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -79,7 +80,10 @@
     <p><%= "Building: " + class1.building %></p>
     <p><%= "Room: " + class1.room %></p>
 
-    <button class="drop-btn" onclick="dropClass('<%= class1.name %>')">Drop Class</button>
+
+
+        <button class="drop-btn">Drop Class</button>
+
 </div>
 
 <%
@@ -88,19 +92,19 @@
 
 <!-- Add script to handle the dropClass function -->
 <script>
-    function dropClass(className) {
-        // Make an AJAX request to call the dropClass function
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "MechanicalEngineeringServlet");
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Reload the page to show updated class list
-                location.reload();
-            }
-        };
-        xhr.send("className=" + className);
-    }
+    // function dropClass(className) {
+    //     // Make an AJAX request to call the dropClass function
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open("POST", "MechanicalEngineeringServlet");
+    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    //     xhr.onreadystatechange = function() {
+    //         if (xhr.readyState === 4 && xhr.status === 200) {
+    //             // Reload the page to show updated class list
+    //             location.reload();
+    //         }
+    //     };
+    //     xhr.send("className=" + className);
+    // }
 </script>
 
 </body>

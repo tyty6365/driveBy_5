@@ -13,12 +13,15 @@ import java.util.ArrayList;
 @WebServlet(name = "MechanicalEngineeringServlet", value = "/MechanicalEngineeringServlet")
 public class MechanicalEngineeringServlet extends HttpServlet {
     ArrayList<Class> pp = new ArrayList<>();
-    User willc = (User) getServletContext().getAttribute("User");
+
 
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User willc = (User) getServletContext().getAttribute("User");
         String className = request.getParameter("className");
+        willc.removeClassFromSchedule(className);
+        response.setStatus(HttpServletResponse.SC_OK);
 
     }
 
@@ -35,11 +38,13 @@ public class MechanicalEngineeringServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String meClasses = request.getParameter("ME");
+
         if(meClasses.equals("schedule")){
             redirection(request, response, pp);
         }else {
             String username = (String) getServletContext().getAttribute("Username");
             System.out.println(username);
+            User willc = (User) getServletContext().getAttribute("User");
             Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + meClasses);
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
             willc.addClassToSchedule(newClass);
