@@ -38,15 +38,17 @@ public class MechanicalEngineeringServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String meClasses = request.getParameter("ME");
+        User willc = (User) getServletContext().getAttribute("User");
+        pp = willc.scheduledClasses;
 
         if(meClasses.equals("schedule")){
             redirection(request, response, pp);
         }else {
             String username = (String) getServletContext().getAttribute("Username");
-            System.out.println(username);
-            User willc = (User) getServletContext().getAttribute("User");
+//            System.out.println(username);
+
             Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + meClasses);
-            Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
+           Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
             willc.addClassToSchedule(newClass);
              pp = willc.scheduledClasses;
             for( Class class1 : pp){
