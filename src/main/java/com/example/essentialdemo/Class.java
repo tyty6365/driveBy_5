@@ -4,7 +4,7 @@ public class Class {
     public String name;
     public int section;
     public int hours;//how many credit hours are granted by this class
-    ClassTime cTime;
+    public ClassTime cTime;
     public String building;
     public String room;
     public String instructor;

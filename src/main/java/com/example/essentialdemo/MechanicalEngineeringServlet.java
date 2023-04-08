@@ -17,7 +17,10 @@ public class MechanicalEngineeringServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String drop = request.getParameter("drop");
+        if(drop.equals("drop")){
 
+        }
     }
 
     protected void redirection(HttpServletRequest request, HttpServletResponse response, ArrayList<Class> a) throws ServletException, IOException {

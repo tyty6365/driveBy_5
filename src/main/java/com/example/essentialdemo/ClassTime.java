@@ -9,5 +9,9 @@ public class ClassTime {
         daysOfWeek = days;
         start = new timeDeterminator(firstNum, morning1);
         end = new timeDeterminator(secondNum, morning2);
+
+        for(int i = 0; i < days.length; i++){
+            System.out.println(days[i]);
+        }
     }
 }
