@@ -1,17 +1,16 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: mimic
+  Date: 4/8/2023
+  Time: 2:50 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.example.*"%>
 <%@ page import="java.lang.reflect.Array" %>
 <%@ page import="com.example.essentialdemo.Class" %>
 <%@ page import="com.example.essentialdemo.User" %>
 <%@ page import="com.example.essentialdemo.DropCourse" %>
-
-<%--
-  Created by IntelliJ IDEA.
-  com.example.essentialdemo.User: mimic
-  Date: 4/4/2023
-  Time: 12:09 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -45,7 +44,7 @@
 
         .drop-btn {
             position: absolute;
-            bottom: 1px;
+            bottom: 1px; /* Change this value to move the button lower */
             right: 16px;
             background-color: red;
             color: white;
@@ -78,7 +77,7 @@
 <%
     System.out.println("JSP page displayed");
     User willc = (User) request.getAttribute("User");
-    ArrayList<Class> pp1 = (ArrayList<Class>)request.getAttribute("pp");
+    ArrayList<Class> pp1 = (ArrayList<Class>)request.getAttribute("ee");
     System.out.println(pp1);
 %>
 
@@ -105,22 +104,6 @@
 <%
     }
 %>
-
-<!-- Add script to handle the dropClass function -->
-
-<%--    // function dropClass(className) {--%>
-<%--    //     // Make an AJAX request to call the dropClass function--%>
-<%--    //     var xhr = new XMLHttpRequest();--%>
-<%--    //     xhr.open("POST", "MechanicalEngineeringServlet");--%>
-<%--    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");--%>
-<%--    //     xhr.onreadystatechange = function() {--%>
-<%--    //         if (xhr.readyState === 4 && xhr.status === 200) {--%>
-<%--    //             // Reload the page to show updated class list--%>
-<%--    //             location.reload();--%>
-<%--    //         }--%>
-<%--    //     };--%>
-<%--    //     xhr.send("className=" + className);--%>
-<%--    // }--%>
 
 
 </body>

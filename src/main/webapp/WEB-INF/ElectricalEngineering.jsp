@@ -5,6 +5,7 @@
   Time: 2:25 PM
   To change this template use File | Settings | File Templates.
 --%>
+-<!DOCTYPE html>
 -<html>
 <style>
     html, body {
@@ -115,101 +116,47 @@
 <body>
 
 
-<a href="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ee_flowchart.pdf"> Engineering FlowChart 23-24
-    FlowChart 23/24 </a>
-<div class="coreclasses">
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_me_w_4yr_crit_path_phaseone_flowchart.pdf"> Mechanical Engineering FlowChart 23-24 </a>
+<div class ="coreclasses">
     <strong>Core Classes</strong>
 </div>
-<form id="myForm" action="ElectricalEngineering" method="post">
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">EE 1810</div>
-        <div class="card-body">Time<br>
-            Days:
-            <br>
+<form action = "EEServlet" method = post>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">EE 1810</div>
+            <div class="card-body">Time<br>
+                Days:
+                <br>
+            </div>
+            <button class="add-button" value = "EE1810" name="EE">Add Class</button>
         </div>
-        <button id="EE1810" type="button" data-value="false" value="EE 1810" class="add-button" name ="button">ADD CLASS</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 2741</div>
-        <div class="card-body">Time<br>
-            Days:
+        <div class="card">
+            <div class="card-header">EE 2120</div>
+            <div class="card-body">Time<br>
+                Days:</div>
+            <button class="add-button" value = "EE2120" name="EE">Add Class</button>
         </div>
-        <button id="EE2741" type="button" data-value="false" value="EE 2741" class="add-button" name="button">ADD CLASS</button>
+        <div class="card">
+            <div class="card-header">EE 2741</div>
+            <div class="card-body">Card Body</div>
+            <button class="add-button" value = "EE2741" name="EE">Add Class</button>
+        </div>
+        <div class="card">
+            <div class="card-header">EE 2742</div>
+            <div class="card-body">Card Body</div>
+            <button class="add-button" value = "EE2742" name="EE">Add Class</button>
+        </div>
+        <button class="add-button" value = "schedule" name="EE">See Schedule</button>
+
     </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
 </form>
-<%--<script>--%>
-<%--    var form = document.getElementById("myForm");--%>
-<%--    var buttons = document.querySelectorAll(".add-button[data-value='false']");--%>
 
-<%--    for (var i = 0; i < buttons.length; i++) {--%>
-<%--        buttons[i].addEventListener("click", function() {--%>
-<%--            // Check the button data-value--%>
-<%--            if (this.getAttribute("data-value") === "false") {--%>
-<%--                // Set the button data-value to true--%>
-<%--                this.setAttribute("data-value", "true");--%>
 
-<%--                // Submit the form data to the servlet--%>
-<%--                form.submit();--%>
-<%--            }--%>
-<%--        });--%>
-<%--    }--%>
-<%--</script>--%>
+
+
+
+
 </body>
-
+<script>
+</script>
 </html>

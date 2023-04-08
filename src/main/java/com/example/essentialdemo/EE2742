@@ -1,0 +1,16 @@
+Name:EE2742
+Section:1
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:3
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1202
+Building:PATRICK TAYLOR HALL
+Instructor:Brener N
+Prereqs:CSC1351

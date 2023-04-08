@@ -150,9 +150,7 @@
 
 </div>
 </form>
-<form action = "MechanicalEngineeringServlet" method = get>
-    <button class="add-button" value = "schedule" name="drop">See Schedule</button>
-</form>
+
 
 
 
