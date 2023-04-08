@@ -115,7 +115,7 @@
 </style>
 <body>
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_seg_flowchart.pdf"> Computer Science FlowChart 23-24 </a>
-<a href ="Software.jsp"> Your Schedule </a>
+
 <form  action="SoftwareEngineeringServlet" method="post">
     <button name = "CSC3102" value ="CSC 3102"  class="add-button" >Click here to see your schedule </button>
 </form>

@@ -167,13 +167,13 @@ public class User {
         System.out.println(passesPreReqCheck);
         return passesPreReqCheck;
     }
-    public void removeClassFromSchedule(Class wantsToRemove){
+    public void removeClassFromSchedule(String wantsToRemove){
         for(int i = 0; i < scheduledClasses.size(); i++){
-            if(wantsToRemove.name.equals(scheduledClasses.get(i).name)){
+            if(wantsToRemove.equals(scheduledClasses.get(i).name)){
                 scheduledClasses.remove(scheduledClasses.get(i));
             }
         }
-        DropCourse.updateTextFile(this.eightNine,wantsToRemove.name);
+        DropCourse.updateTextFile(this.eightNine,wantsToRemove);
         //send user a message saying class has successfully been removed
     }
 }

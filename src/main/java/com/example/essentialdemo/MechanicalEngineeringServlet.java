@@ -13,14 +13,13 @@ import java.util.ArrayList;
 @WebServlet(name = "MechanicalEngineeringServlet", value = "/MechanicalEngineeringServlet")
 public class MechanicalEngineeringServlet extends HttpServlet {
     ArrayList<Class> pp = new ArrayList<>();
+    User willc = (User) getServletContext().getAttribute("User");
 
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String drop = request.getParameter("drop");
-        if(drop.equals("drop")){
+        String className = request.getParameter("className");
 
-        }
     }
 
     protected void redirection(HttpServletRequest request, HttpServletResponse response, ArrayList<Class> a) throws ServletException, IOException {
@@ -41,8 +40,7 @@ public class MechanicalEngineeringServlet extends HttpServlet {
         }else {
             String username = (String) getServletContext().getAttribute("Username");
             System.out.println(username);
-            User willc = (User) getServletContext().getAttribute("User");
-            Course newCourse = new Course("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\" + meClasses);
+            Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + meClasses);
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
             willc.addClassToSchedule(newClass);
              pp = willc.scheduledClasses;
@@ -52,7 +50,7 @@ public class MechanicalEngineeringServlet extends HttpServlet {
                 System.out.println(class1.instructor);
             }
 
-            File classes = new File("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\" + username);
+            File classes = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + username);
             RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
             dispatcherrr.forward(request, response);
 

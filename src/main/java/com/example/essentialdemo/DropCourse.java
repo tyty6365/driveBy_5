@@ -5,7 +5,7 @@ import java.io.*;
 public class DropCourse {
     public static void updateTextFile(String fileName, String newClass) {
         try {
-            File oldFile = new File("src/" + fileName);
+            File oldFile = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\" + fileName);
             BufferedReader reader = new BufferedReader(new FileReader(oldFile));
             String line = "", oldContent = "";
             while ((line = reader.readLine()) != null) {
