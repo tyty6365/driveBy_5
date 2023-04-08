@@ -55,6 +55,21 @@
             cursor: pointer;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function dropClass(className) {
+            $.ajax({
+                url: "MechanicalEngineeringServlet?className=" + className,
+                method: "GET",
+                success: function(response) {
+                    location.reload();
+                },
+                error: function(xhr, status, error) {
+                    alert("Error dropping class: " + error);
+                }
+            });
+        }
+    </script>
 </head>
 <body>
 <h1>Selected Classes:</h1>
@@ -82,7 +97,7 @@
 
 
 
-        <button class="drop-btn">Drop Class</button>
+    <button class="drop-btn" onclick="dropClass('<%= class1.name %>')">Drop Class</button>
 
 </div>
 
@@ -91,21 +106,21 @@
 %>
 
 <!-- Add script to handle the dropClass function -->
-<script>
-    // function dropClass(className) {
-    //     // Make an AJAX request to call the dropClass function
-    //     var xhr = new XMLHttpRequest();
-    //     xhr.open("POST", "MechanicalEngineeringServlet");
-    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    //     xhr.onreadystatechange = function() {
-    //         if (xhr.readyState === 4 && xhr.status === 200) {
-    //             // Reload the page to show updated class list
-    //             location.reload();
-    //         }
-    //     };
-    //     xhr.send("className=" + className);
-    // }
-</script>
+
+<%--    // function dropClass(className) {--%>
+<%--    //     // Make an AJAX request to call the dropClass function--%>
+<%--    //     var xhr = new XMLHttpRequest();--%>
+<%--    //     xhr.open("POST", "MechanicalEngineeringServlet");--%>
+<%--    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");--%>
+<%--    //     xhr.onreadystatechange = function() {--%>
+<%--    //         if (xhr.readyState === 4 && xhr.status === 200) {--%>
+<%--    //             // Reload the page to show updated class list--%>
+<%--    //             location.reload();--%>
+<%--    //         }--%>
+<%--    //     };--%>
+<%--    //     xhr.send("className=" + className);--%>
+<%--    // }--%>
+
 
 </body>
 </html>

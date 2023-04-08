@@ -16,6 +16,8 @@ public class User {
     }
 
     public void fileAddToSchedule(Class wantsToAdd){
+
+
         scheduledClasses.add(wantsToAdd);
     }
 
@@ -167,7 +169,7 @@ public class User {
         System.out.println(passesPreReqCheck);
         return passesPreReqCheck;
     }
-    public void removeClassFromSchedule(String wantsToRemove){
+    public void removeClassFromSchedule(String userName, String wantsToRemove){
         for(int i = 0; i < scheduledClasses.size(); i++){
             if(wantsToRemove.equals(scheduledClasses.get(i).name)){
                 scheduledClasses.remove(scheduledClasses.get(i));

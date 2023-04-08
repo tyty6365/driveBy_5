@@ -12,8 +12,7 @@ public class UpdateUserText {
                 oldContent += line + System.lineSeparator();
             }
             reader.close();
-            String newContent = oldContent.replaceFirst("ScheduledClasses:", "ScheduledClasses:" + newClass + ",");
-            File newFile = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + fileName);
+            String newContent = oldContent.replaceAll("ScheduledClasses:\\s*(.*)", "ScheduledClasses:$1,"+newClass);            File newFile = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + fileName);
             FileWriter writer = new FileWriter(newFile);
             writer.write(newContent);
             writer.close();

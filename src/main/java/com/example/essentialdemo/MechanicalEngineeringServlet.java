@@ -20,9 +20,15 @@ public class MechanicalEngineeringServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User willc = (User) getServletContext().getAttribute("User");
         String className = request.getParameter("className");
-        willc.removeClassFromSchedule(className);
-        response.setStatus(HttpServletResponse.SC_OK);
+        System.out.println("User: " + willc.eightNine);
+        System.out.println("Dropping class:" + className);
+        willc.removeClassFromSchedule(willc.eightNine,className);
+        pp = willc.scheduledClasses;
+        request.setAttribute("pp", pp);
 
+        // forward the request to the JSP page to display the updated scheduled classes
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/Software.jsp");
+        dispatcher.forward(request, response);
     }
 
     protected void redirection(HttpServletRequest request, HttpServletResponse response, ArrayList<Class> a) throws ServletException, IOException {

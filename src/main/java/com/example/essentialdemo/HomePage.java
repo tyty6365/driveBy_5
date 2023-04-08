@@ -30,9 +30,12 @@ public class HomePage extends HttpServlet {
             UserFileConvertor w = new UserFileConvertor("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + username);
             ArrayList<Class> wClasses = new ArrayList<>();
             for (int i = 0; i < w.getScheduledClasses().size(); i++) {
-                String testClass = w.getScheduledClasses().get(i);
-                Course a = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + testClass);
-                wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
+
+                if(w.getScheduledClasses().get(i).equals("PLACEHOLDER")) {}else{
+                    String testClass = w.getScheduledClasses().get(i);
+                    Course a = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\" + testClass);
+                    wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
+                }
             }
             User willc = new User(w.getUsername(), w.getPassword(), w.getFinishedClasses());
             for (int i = 0; i < wClasses.size(); i++) {
