@@ -1,3 +1,5 @@
+package com.example.essentialdemo;
+
 import java.util.ArrayList;
 
 public class User {
@@ -21,13 +23,13 @@ public class User {
         System.out.println(wantsToAdd.name);
         for(int i = 0; i < finishedClasses.size(); i++){
             if(wantsToAdd.name.equals(finishedClasses.get(i))){
-                //return error message to User saying they've already taken class
+                //return error message to com.example.essentialdemo.User saying they've already taken class
             }
         }
 
         for(int i = 0; i < scheduledClasses.size(); i++){
             if(wantsToAdd.name.equals(scheduledClasses.get(i).name)){
-                //return error message to User saying they are already taking this class
+                //return error message to com.example.essentialdemo.User saying they are already taking this class
             }
         }
 

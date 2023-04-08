@@ -1,12 +1,14 @@
+package com.example.essentialdemo;
+
 public class Class {
-    String name;
-    int section;
-    int hours;//how many credit hours are granted by this class
+    public String name;
+    public int section;
+    public int hours;//how many credit hours are granted by this class
     ClassTime cTime;
-    String building;
-    String room;
-    String instructor;
-    String[] prerequisites;
+    public String building;
+    public String room;
+    public String instructor;
+    public String[] prerequisites;
 
     public Class(String name, int section, int hours, boolean[] days, double firstNum, boolean morning1, double secondNum, boolean morning2, String building, String room, String instructor, String[] prereqs){
         this.name = name;

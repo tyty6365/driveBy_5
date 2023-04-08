@@ -1,3 +1,5 @@
+package com.example.essentialdemo;
+
 import java.io.*;
 
 public class DropCourse {

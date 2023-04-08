@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: tscott
+  com.example.essentialdemo.User: tscott
   Date: 3/31/23
   Time: 2:49 PM
   To change this template use File | Settings | File Templates.

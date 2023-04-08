@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: mimic
+  com.example.essentialdemo.User: mimic
   Date: 3/25/2023
   Time: 2:25 PM
   To change this template use File | Settings | File Templates.

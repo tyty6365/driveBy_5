@@ -1,3 +1,4 @@
+package com.example.essentialdemo;
 public class timeDeterminator {
     double time;
     boolean am;

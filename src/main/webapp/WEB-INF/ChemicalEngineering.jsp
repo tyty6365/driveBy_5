@@ -1,7 +1,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
-  User: mimic
+  com.example.essentialdemo.User: mimic
   Date: 3/25/2023
   Time: 11:09 AM
   To change this template use File | Settings | File Templates.
@@ -131,7 +131,7 @@
                 <br>
             </div>
 
-            <button class="add-button" id="CHE-1100" type="submit" value="CHE 1100" name="CHEENG">Add Class</button>
+            <button class="add-button" id="CHE-1100" type="submit" value="CHE 1100" name="CHEENG">Add com.example.essentialdemo.Class</button>
 
             <%
                 List<String> schedule = new ArrayList<>();
@@ -148,17 +148,17 @@
             <div class="card-body">Time<br>
                 Days:
             </div>
-            <button class="add-button" id="CHEM-1202" type="submit" value="CHEM 1202" name="CHEENG">Add Class</button>
+            <button class="add-button" id="CHEM-1202" type="submit" value="CHEM 1202" name="CHEENG">Add com.example.essentialdemo.Class</button>
         </div>
         <div class="card">
             <div class="card-header">CHEM 2171</div>
             <div class="card-body">Card Body</div>
-            <button class="add-button" id="CHEM-2171" type="submit" value="CHEM 2171" name="CHEENG">Add Class</button>
+            <button class="add-button" id="CHEM-2171" type="submit" value="CHEM 2171" name="CHEENG">Add com.example.essentialdemo.Class</button>
         </div>
         <div class="card">
             <div class="card-header">CHEM 2176</div>
             <div class="card-body">Card Body</div>
-            <button class="add-button" id="CHEM-2176" type="submit" value="CHEM 2176" name="CHEENG">Add Class</button>
+            <button class="add-button" id="CHEM-2176" type="submit" value="CHEM 2176" name="CHEENG">Add com.example.essentialdemo.Class</button>
         </div>
     </div>
     <button value="See classes" name="CHEENG"> Here's your Schedule</button>
@@ -216,7 +216,7 @@
                 Days:
                 <br>
             </div>
-            <button class="add-button">Add Class</button>
+            <button class="add-button">Add com.example.essentialdemo.Class</button>
         </div>
         <div class="card">
             <div class="card-header">Card Header</div>
@@ -243,7 +243,7 @@
                 Days:
                 <br>
             </div>
-            <button class="add-button">Add Class</button>
+            <button class="add-button">Add com.example.essentialdemo.Class</button>
         </div>
         <div class="card">
             <div class="card-header">Card Header</div>

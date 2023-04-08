@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: mimic
+  com.example.essentialdemo.User: mimic
   Date: 3/24/2023
   Time: 10:06 PM
   To change this template use File | Settings | File Templates.
@@ -147,8 +147,11 @@
         <button class="add-button" value = "CSC1111" name="ME">Add Class</button>
     </div>
     <button class="add-button" value = "schedule" name="ME">See Schedule</button>
+
 </div>
 </form>
+
+
 
 
 </body>

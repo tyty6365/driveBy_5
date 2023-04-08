@@ -54,7 +54,7 @@
 <%--    <title>Chemical Engineering</title>--%>
 <%--</head>--%>
 <%--<body>--%>
-<%--<h1>Your Selected Class:</h1>--%>
+<%--<h1>Your Selected com.example.essentialdemo.Class:</h1>--%>
 <%--${four}--%>
 <%--</body>--%>
 <%--</html>--%>

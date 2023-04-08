@@ -1,9 +1,13 @@
+package com.example.essentialdemo;
+
+import com.example.essentialdemo.Class;
+import com.example.essentialdemo.Course;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet(name = "SecondHelloServlet", value = "/SecondHelloServlet")
 public class HomePage extends HttpServlet {
@@ -23,11 +27,11 @@ public class HomePage extends HttpServlet {
         try {
 
 
-            UserFileConvertor w = new UserFileConvertor("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + username);
+            UserFileConvertor w = new UserFileConvertor("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\" + username);
             ArrayList<Class> wClasses = new ArrayList<>();
             for (int i = 0; i < w.getScheduledClasses().size(); i++) {
                 String testClass = w.getScheduledClasses().get(i);
-                Course a = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff(2)\\src\\main\\java\\" + testClass);
+                Course a = new Course("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\" + testClass);
                 wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
             }
             User willc = new User(w.getUsername(), w.getPassword(), w.getFinishedClasses());

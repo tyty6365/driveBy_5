@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: mimic
+  com.example.essentialdemo.User: mimic
   Date: 3/25/2023
   Time: 2:26 PM
   To change this template use File | Settings | File Templates.
@@ -128,7 +128,7 @@
       Days:
       <br>
     </div>
-    <button class="add-button">Add Class</button>
+    <button class="add-button">Add com.example.essentialdemo.Class</button>
   </div>
   <div class="card">
     <div class="card-header">Card Header</div>

@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: mimic
+  com.example.essentialdemo.User: mimic
   Date: 3/22/2023
   Time: 2:46 PM
   To change this template use File | Settings | File Templates.
@@ -127,7 +127,7 @@
             Days:
             <br>
         </div>
-        <button onclick="addClass('CSC 1350', this);" class="add-button" value ="1350">Add Class</button>
+        <button onclick="addClass('CSC 1350', this);" class="add-button" value ="1350">Add com.example.essentialdemo.Class</button>
 
     </div>
     <div class="card">
@@ -144,30 +144,30 @@
     <div class="card">
         <div class="card-header">CSC 2262</div>
         <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add Class</button>
+        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add com.example.essentialdemo.Class</button>
     </div>
 </div>
 <div class="card-container">
     <div class="card">
         <div class="card-header">CSC 3501</div>
         <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 3501', this);" class="add-button" value ="3501">Add Class</button>
+        <button onclick="addClass('CSC 3501', this);" class="add-button" value ="3501">Add com.example.essentialdemo.Class</button>
 
     </div>
     <div class="card">
         <div class="card-header">CSC 2259</div>
         <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 2259', this);" class="add-button" value ="2259">Add Class</button>
+        <button onclick="addClass('CSC 2259', this);" class="add-button" value ="2259">Add com.example.essentialdemo.Class</button>
     </div>
     <div class="card">
         <div class="card-header">CSC 2262</div>
         <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add Class</button>
+        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add com.example.essentialdemo.Class</button>
     </div>
     <div class="card">
         <div class="card-header">CSC 4101</div>
         <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 4101', this);" class="add-button" value ="4101">Add Class</button>
+        <button onclick="addClass('CSC 4101', this);" class="add-button" value ="4101">Add com.example.essentialdemo.Class</button>
     </div>
 </div>
 <div class="card-container">

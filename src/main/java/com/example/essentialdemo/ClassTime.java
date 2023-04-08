@@ -1,3 +1,5 @@
+package com.example.essentialdemo;
+
 public class ClassTime {
     boolean[] daysOfWeek;//[0][1][2][3][4]
     timeDeterminator start;
