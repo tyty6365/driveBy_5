@@ -122,149 +122,34 @@
 <div class="coreclasses">
     <strong>Core Classes</strong>
 </div>
-<form action="ChemicalEngineeringServlet" method="post">
+<form action="CEServlet" method="post">
     <div class="card-container">
         <div class="card">
-            <div class="card-header" id="CHE1100">CHE 1100</div>
+            <div class="card-header">CSC 2262</div>
             <div class="card-body">Time<br>
                 Days:
                 <br>
             </div>
+            <button class="add-button" value = "CSC2262" name="CE">Add Class</button>
+        </div>
+        <div class="card">
+            <div class="card-header">CSC 3380</div>
+            <div class="card-body">Time<br>
+                Days:</div>
+            <button class="add-button" value = "CSC3380" name="CE">Add Class</button>
+        </div>
+        <div class="card">
+            <div class="card-header">CSC 4040</div>
+            <div class="card-body">Card Body</div>
+            <button class="add-button" value = "CSC4040" name="CE">Add Class</button>
+        </div>
+        <div class="card">
+            <div class="card-header">CSC 1111</div>
+            <div class="card-body">Card Body</div>
+            <button class="add-button" value = "CSC1111" name="CE">Add Class</button>
+        </div>
+        <button class="add-button" value = "schedule" name="CE">See Schedule</button>
 
-            <button class="add-button" id="CHE-1100" type="submit" value="CHE 1100" name="CHEENG">Add com.example.essentialdemo.Class</button>
-
-            <%
-                List<String> schedule = new ArrayList<>();
-                if (request.getParameter("CHEENG") != null) {
-                    schedule.add(request.getParameter("CHEENG"));
-                    System.out.println("add val: " + schedule);
-                }
-            %>
-
-        </div>
-
-        <div class="card">
-            <div class="card-header">Chem 1202</div>
-            <div class="card-body">Time<br>
-                Days:
-            </div>
-            <button class="add-button" id="CHEM-1202" type="submit" value="CHEM 1202" name="CHEENG">Add com.example.essentialdemo.Class</button>
-        </div>
-        <div class="card">
-            <div class="card-header">CHEM 2171</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button" id="CHEM-2171" type="submit" value="CHEM 2171" name="CHEENG">Add com.example.essentialdemo.Class</button>
-        </div>
-        <div class="card">
-            <div class="card-header">CHEM 2176</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button" id="CHEM-2176" type="submit" value="CHEM 2176" name="CHEENG">Add com.example.essentialdemo.Class</button>
-        </div>
-    </div>
-    <button value="See classes" name="CHEENG"> Here's your Schedule</button>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-    </div>
-    <div class="Humanities">
-        Humanities
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-header">CSC 1350</div>
-            <div class="card-body">Time<br>
-                Days:
-                <br>
-            </div>
-            <button class="add-button">Add com.example.essentialdemo.Class</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Time<br>
-                Days:
-            </div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-header">CSC 1350</div>
-            <div class="card-body">Time<br>
-                Days:
-                <br>
-            </div>
-            <button class="add-button">Add com.example.essentialdemo.Class</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Time<br>
-                Days:
-            </div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
-        <div class="card">
-            <div class="card-header">Card Header</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button">Add</button>
-        </div>
     </div>
 </form>
-</body>
-<script>
-</script>
 </html>

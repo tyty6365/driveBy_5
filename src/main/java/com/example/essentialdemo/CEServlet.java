@@ -7,10 +7,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-@WebServlet(name = "EEServlet", value = "/EEServlet")
-public class EEServlet extends HttpServlet {
-
-    ArrayList<Class> ee = new ArrayList<>();
+@WebServlet(name = "CEServlet", value = "/CEServlet")
+public class CEServlet extends HttpServlet {
+    ArrayList<Class> ce = new ArrayList<>();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User eeuser = (User) getServletContext().getAttribute("User");
@@ -18,19 +17,19 @@ public class EEServlet extends HttpServlet {
         System.out.println("User: " + eeuser.eightNine);
         System.out.println("Dropping class:" + className);
         eeuser.removeClassFromSchedule(eeuser.eightNine,className);
-        ee = eeuser.scheduledClasses;
-        request.setAttribute("ee", ee);
+        ce = eeuser.scheduledClasses;
+        request.setAttribute("ce", ce);
 
         // forward the request to the JSP page to display the updated scheduled classes
-        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/EESchedule.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/CESchedule.jsp");
         dispatcher.forward(request, response);
     }
 
     protected void redirection(HttpServletRequest request, HttpServletResponse response, ArrayList<Class> a) throws ServletException, IOException {
 //
-        request.setAttribute("ee", a);
+        request.setAttribute("ce", a);
         if (a!=null) {
-            RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/EESchedule.jsp");
+            RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/CESchedule.jsp");
             dispatcherr.forward(request, response);
 //
         }
@@ -38,31 +37,30 @@ public class EEServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String eeClasses = request.getParameter("EE");
-        User eeuser = (User) getServletContext().getAttribute("User");
-         ee = eeuser.scheduledClasses;
-         if(eeClasses.equals("schedule")){
-            redirection(request, response, ee);
+        String ceClasses = request.getParameter("CE");
+        User ceuser = (User) getServletContext().getAttribute("User");
+        ce = ceuser.scheduledClasses;
+        if(ceClasses.equals("schedule")){
+            redirection(request, response, ce);
         }else {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("/Users/arieljupiter/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/" + eeClasses);
+            Course newCourse = new Course("/Users/arieljupiter/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/" + ceClasses);
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
-            eeuser.addClassToSchedule(newClass);
-             ee = eeuser.scheduledClasses;
-            for( Class class1 : ee){
+            ceuser.addClassToSchedule(newClass);
+            ce = ceuser.scheduledClasses;
+            for( Class class1 : ce){
                 System.out.println(class1.name);
                 System.out.println(class1.room);
                 System.out.println(class1.instructor);
             }
 
             File classes = new File("/Users/arieljupiter/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/" + username);
-            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/ElectricalEngineering.jsp");
+            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/ChemicalEngineering.jsp");
             dispatcherrr.forward(request, response);
 
         }
 
     }
-    }
-
+}

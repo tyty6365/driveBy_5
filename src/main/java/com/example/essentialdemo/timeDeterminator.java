@@ -22,20 +22,6 @@ public class timeDeterminator {
 
     }
 
-//    public String timeString(double fileTime){
-//        double thisTime = fileTime;
-//        int hour = (int) thisTime;
-//        int minute = (int) ((thisTime - hour) * 60 + 0.5);
-//        String timeString;
-//        if (minute == 0) {
-//            timeString = hour + ":00";
-//        } else {
-//            timeString = hour + ":" + String.format("%02d", minute);
-//        }
-//        return timeString;
-//
-//
-//
-//
-//    }
+
+
 }
