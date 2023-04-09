@@ -93,8 +93,7 @@
     <p><%= "Time: " + class1.cTime.start.fixedTime + " - " + class1.cTime.end.fixedTime + "   " + class1.cTime.dWeek %></p>
     <p><%= "Instructor: " + class1.instructor %></p>
     <p><%= "Building: " + class1.building %></p>
-    <p><%= "Room: " + class1.room %></p>
-//added by ariel
+
 
 
     <button class="drop-btn" onclick="dropClass('<%= class1.name %>')">Drop Class</button>
