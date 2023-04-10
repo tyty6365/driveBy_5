@@ -1,0 +1,16 @@
+Name:ART1001
+Section:4
+Credit Hours:3
+Start:12.00
+Morning?:pm
+End:2.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0112
+Building:GYM
+Instructor:HOMAN T
+Prereqs:

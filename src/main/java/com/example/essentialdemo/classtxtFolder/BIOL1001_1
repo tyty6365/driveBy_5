@@ -1,0 +1,16 @@
+Name:BIOL1001
+Section:1
+Credit Hours:3
+Start:2.30
+Morning?:pm
+End:3.30
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:0112
+Building:WILLIAMS
+Instructor:HOMAN T
+Prereqs:

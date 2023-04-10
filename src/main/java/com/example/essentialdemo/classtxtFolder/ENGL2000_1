@@ -1,0 +1,16 @@
+Name:ENGL2000
+Section:1
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:2.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0112
+Building:ALLEN
+Instructor:HOMAN T
+Prereqs:ENGL1001

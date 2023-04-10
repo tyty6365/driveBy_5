@@ -1,0 +1,16 @@
+Name:CHEM1001
+Section:1
+Credit Hours:3
+Start:9.30
+Morning?:am
+End:10.30
+EndMorning?:am
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:0112
+Building:WILLIAMS
+Instructor:HOMAN T
+Prereqs:

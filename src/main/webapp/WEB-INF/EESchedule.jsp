@@ -57,9 +57,10 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+
         function dropClass(className) {
             $.ajax({
-                url: "MechanicalEngineeringServlet?className=" + className,
+                url: "EEServlet?className=" + className,
                 method: "GET",
                 success: function(response) {
                     location.reload();

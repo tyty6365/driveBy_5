@@ -106,21 +106,7 @@
     }
 %>
 
-<!-- Add script to handle the dropClass function -->
 
-<%--    // function dropClass(className) {--%>
-<%--    //     // Make an AJAX request to call the dropClass function--%>
-<%--    //     var xhr = new XMLHttpRequest();--%>
-<%--    //     xhr.open("POST", "MechanicalEngineeringServlet");--%>
-<%--    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");--%>
-<%--    //     xhr.onreadystatechange = function() {--%>
-<%--    //         if (xhr.readyState === 4 && xhr.status === 200) {--%>
-<%--    //             // Reload the page to show updated class list--%>
-<%--    //             location.reload();--%>
-<%--    //         }--%>
-<%--    //     };--%>
-<%--    //     xhr.send("className=" + className);--%>
-<%--    // }--%>
 
 
 </body>
