@@ -1,0 +1,16 @@
+Name:EE3410
+Section:1
+Credit Hours:3
+Start:4.30
+Morning?:pm
+End:5.50
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:false
+Room:1236
+Building:PATRICK TAYLOR
+Instructor:LKargarian Mar
+Prereqs:EE2130

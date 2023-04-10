@@ -1,0 +1,16 @@
+Name:ME2543
+Section:2
+Credit Hours:3
+Start:12
+Morning?:pm
+End:1.20
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1256
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:ME1222,MATH2070,MATH2090

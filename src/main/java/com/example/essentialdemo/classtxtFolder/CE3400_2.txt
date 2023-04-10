@@ -1,0 +1,16 @@
+Name:CE3400
+Section:2
+Credit Hours:3
+Start:9
+Morning?:am
+End:10.20
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0103
+Building:JULIAN HALL
+Instructor:Moorthy S
+Prereqs:CE2450

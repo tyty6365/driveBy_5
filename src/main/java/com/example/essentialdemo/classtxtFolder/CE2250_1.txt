@@ -1,0 +1,16 @@
+Name:CE2250
+Section:1
+Credit Hours:1
+Start:3.30
+Morning?:pm
+End:6.20
+EndMorning?:pm
+M:true
+T:false
+W:false
+TH:false
+F:false
+Room:2219
+Building:PATRICK TAYLOR
+Instructor:Nazari H
+Prereqs:CE2200

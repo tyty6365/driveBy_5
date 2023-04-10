@@ -1,0 +1,16 @@
+Name:EE3752
+Section:3
+Credit Hours:3
+Start:12.30
+Morning?:pm
+End:1.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:false
+Room:1263
+Building:PATRICK TAYLOR
+Instructor:Trahan J
+Prereqs:EE2742,CSC1253

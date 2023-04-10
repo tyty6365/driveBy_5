@@ -1,0 +1,16 @@
+Name:EVEG3200
+Section:1
+Credit Hours:3
+Start:3.30
+Morning?:pm
+End:4.50
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:false
+Room:1206
+Building:PATRICK TAYLOR
+Instructor:Deng Z
+Prereqs:CE2200

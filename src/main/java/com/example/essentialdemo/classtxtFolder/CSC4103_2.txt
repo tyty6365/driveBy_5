@@ -1,0 +1,16 @@
+Name:CSC4103
+Section:2
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.50
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:2324
+Building:PATRICK TAYLOR
+Instructor:Ali-Gombe A
+Prereqs:CSC3102

@@ -1,0 +1,16 @@
+Name:CE3400
+Section:3
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:2.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:2113
+Building:PATRICK TAYLOR
+Instructor:Sun C
+Prereqs:CE2450

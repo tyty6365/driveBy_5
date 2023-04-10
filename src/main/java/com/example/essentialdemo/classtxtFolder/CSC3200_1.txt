@@ -1,0 +1,16 @@
+Name:CSC3200
+Section:1
+Credit Hours:1
+Start:11.30
+Morning?:am
+End:12.20
+EndMorning?:pm
+M:true
+T:false
+W:false
+TH:false
+F:false
+Room:1221
+Building:PATRICK TAYLOR
+Instructor:Chen F
+Prereqs:CSC3102, ENGL2000

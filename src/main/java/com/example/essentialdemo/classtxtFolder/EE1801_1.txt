@@ -1,0 +1,16 @@
+Name:EE1801
+Section:1
+Credit Hours:2
+Start:3
+Morning?:pm
+End:3.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:false
+F:false
+Room:0204
+Building:TUREAUD HALL
+Instructor:Naraghi-Pour
+Prereqs:

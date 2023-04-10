@@ -61,25 +61,29 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="#">BACK</a>
     <a href="#" style="float:right">myLSU</a>
 </div>
 <div>
     <h1 style="text-align:center">Frequently Asked Questions</h1>
     <br>
-    <button type="button" class="collapsible">Question 1</button>
+    <button type="button" class="collapsible">Why will it not allow me to add a class?</button>
     <div class="content">
-        <p>Answer to Question 1</p>
+        <p>1) You do not have the prerequisites for that class; 2) you have already taken that class; or 3)
+            the class is full and is no longer accepting new students.</p>
     </div>
     <br>
-    <button type="button" class="collapsible">Question 2</button>
+    <button type="button" class="collapsible">When I try to log in, it does not take me to the next page. What
+        am I doing wrong?</button>
     <div class="content">
-        <p>Answer to Question 2</p>
+        <p>You are not entering a valid 89 number. You have to be a student at LSU and have a valid 89 number
+            to access Essential Scheduling.</p>
     </div>
     <br>
-    <button type="button" class="collapsible">Question 3</button>
+    <button type="button" class="collapsible">Do I have to take the classes in the order that are on my
+        flowchart?</button>
     <div class="content">
-        <p>Answer to Question 3</p>
+        <p>Although it is recommended that you do take classes in the order that is on your flowchart, you can
+            take classes out of order, as long as you meet the prerequisites for the classes you wish to take.</p>
     </div>
 </body>
 <script>
