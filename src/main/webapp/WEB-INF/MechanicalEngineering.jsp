@@ -116,7 +116,7 @@
 <body>
 
 
-<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_che_flowchart.pdf"> Chemical Engineering FlowChart 23-24 </a>
+<a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_che_flowchart.pdf"> Mechanical Engineering FlowChart 23-24 </a>
 <div class ="coreclasses">
     <strong>Critial Classes</strong>
 </div>
