@@ -33,7 +33,7 @@ public class HomePage extends HttpServlet {
 
                 if(w.getScheduledClasses().get(i).equals("PLACEHOLDER")) {}else{
                     String testClass = w.getScheduledClasses().get(i);
-                    Course a = new Course("/Users/arieljupiter/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/" + testClass);
+                    Course a = new Course("/Users/arieljupiter/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + testClass);
                     wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
                 }
             }
