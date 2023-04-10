@@ -1,0 +1,16 @@
+Name:CSC2259
+Section:1
+Credit Hours:3
+Start:12
+Morning?:pm
+End:1.20
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1100
+Building:PATRICK TAYLOR
+Instructor:Shah R
+Prereqs:CSC1351,MATH1552

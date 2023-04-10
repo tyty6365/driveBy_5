@@ -1,0 +1,16 @@
+Name:CE2450
+Section:2
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.20
+EndMorning?:am
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1236
+Building:PATRICK TAYLOR
+Instructor:El Kholy K
+Prereqs:MATH1552,PHYS2110

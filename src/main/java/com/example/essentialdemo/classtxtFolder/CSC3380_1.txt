@@ -1,0 +1,16 @@
+Name:CSC3380
+Section:1
+Credit Hours:3
+Start:3
+Morning?:pm
+End:4.30
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1221
+Building:PATRICK TAYLOR
+Instructor:Glass C
+Prereqs:CSC1351

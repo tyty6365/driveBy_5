@@ -1,0 +1,16 @@
+Name:ME3701
+Section:1
+Credit Hours:1
+Start:9.30
+Morning?:am
+End:12.20
+EndMorning?:pm
+M:true
+T:false
+W:false
+TH:false
+F:false
+Room:1358
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:ME2733,ENGL1001

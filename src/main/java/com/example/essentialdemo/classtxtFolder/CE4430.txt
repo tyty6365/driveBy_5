@@ -1,0 +1,16 @@
+Name:CE4430
+Section:1
+Credit Hours:3
+Start:3
+Morning?:pm
+End:5.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:2113
+Building:PATRICK TAYLOR
+Instructor:Aly A
+Prereqs:CE4750

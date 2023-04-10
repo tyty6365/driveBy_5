@@ -1,0 +1,16 @@
+Name:CSC3501
+Section:1
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:2.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0103
+Building:TUREAUD HALL
+Instructor:Lee K
+Prereqs:CSC2259

@@ -1,0 +1,16 @@
+Name:EE2741
+Section:1
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.20
+EndMorning?:am
+M:true
+T:false
+W:true
+TH:false
+F:false
+Room:1253
+Building:PATRICK TAYLOR
+Instructor:Abdelwahab M
+Prereqs:MATH1550

@@ -1,0 +1,16 @@
+Name:CE3500
+Section:1
+Credit Hours:3
+Start:9
+Morning?:am
+End:9.50
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1240
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:EXST2201

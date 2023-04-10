@@ -79,18 +79,7 @@
 </div>
 <h1 style="text-align:center">IT Support</h1>
 
-<h2>Common Issues<h2>
-    <button type="button" class="collapsible">Issue 1</button>
-    <div class = "content">
-        <p>Resolution 1</p>
-    </div>
-    <br>
-    <button type="button" class="collapsible">Issue 2</button>
-    <div class = "content">
-        <p>Resolution 2</p>
-    </div>
-
-    <h2>Still having issues? Let us know!</h2>
+    <h2>Having issues? Let us know!</h2>
     <div class="ITform">
         <form>
             <label style="margin-top:10px;">LSUID:</label>

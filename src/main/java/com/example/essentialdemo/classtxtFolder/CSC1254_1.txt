@@ -1,0 +1,16 @@
+Name:CSC1254
+Section:1
+Credit Hours:3
+Start:12.00
+Morning?:pm
+End:1.20
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:2326
+Building:PATRICK TAYLOR
+Instructor:Duncan W
+Prereqs:CSC1253

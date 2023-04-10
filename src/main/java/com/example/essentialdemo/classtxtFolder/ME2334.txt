@@ -1,0 +1,16 @@
+Name:ME2334
+Section:1
+Credit Hours:4
+Start:7.30
+Morning?:am
+End:8.20
+EndMorning?:am
+M:true
+T:true
+W:true
+TH:true
+F:true
+Room:1125
+Building:BUS ED S WING
+Instructor:n/a
+Prereqs:MATH1552,PHYS2110,CHEM1202

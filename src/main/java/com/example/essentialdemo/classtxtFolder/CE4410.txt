@@ -1,0 +1,16 @@
+Name:CE4410
+Section:1
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:2.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0203
+Building:TUREAUD HALL
+Instructor:Okeil A
+Prereqs:CE3415

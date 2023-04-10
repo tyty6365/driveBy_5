@@ -1,0 +1,16 @@
+Name:EE2810
+Section:1
+Credit Hours:2
+Start:9
+Morning?:am
+End:9.50
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:false
+F:false
+Room:1218
+Building:PATRICK TAYLOR
+Instructor:Abdelwahab M
+Prereqs:CSC1253,EE2130,EE2231

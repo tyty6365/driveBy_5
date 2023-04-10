@@ -1,0 +1,16 @@
+Name:CE2200
+Section:1
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:2.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1100
+Building:PATRICK TAYLOR
+Instructor:Kees C
+Prereqs:CE2450

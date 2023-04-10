@@ -1,12 +1,12 @@
 <%--
   Created by IntelliJ IDEA.
-  com.example.essentialdemo.User: mimic
+  User: mimic
   Date: 3/22/2023
   Time: 2:46 PM
   To change this template use File | Settings | File Templates.
 --%>
 <!DOCTYPE html>
--<html>
+<html>
 <style>
     html, body {
         height:
@@ -116,127 +116,158 @@
 <body>
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_csc_seg_flowchart.pdf"> Computer Science FlowChart 23-24 </a>
 
-<form  action="SoftwareEngineeringServlet" method="post">
-    <button name = "CSC3102" value ="CSC 3102"  class="add-button" >Click here to see your schedule </button>
-</form>
-
+<div class="coreclasses">
+    <strong>Core Classes</strong>
+</div>
 <div class="card-container">
     <div class="card">
         <div class="card-header">CSC 1350</div>
-        <div class="card-body">Time<br>
-            Days:
+        <div class="card-body">Time: 9:30a - 10:20a<br>
+            Days: M T F
             <br>
         </div>
-        <button onclick="addClass('CSC 1350', this);" class="add-button" value ="1350">Add com.example.essentialdemo.Class</button>
-
+        <button class="add-button">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">Csc 1351</div>
-        <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 1351', this);" class="add-button" value = "1351">Add</button>
-
+        <div class="card-header">CSC 1351</div>
+        <div class="card-body">Time: 10:30a - 11:50a<br>
+            Days: T TH<br>
+        </div>
+        <button class="add-button">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CSC 3102</div>
-        <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 3102', this);" class="add-button" value = "3102">Add</button>
+        <div class="card-body">Time: 9:00a - 10:20a<br>
+            Days: T TH<br>
+        </div>
+        <button class="add-button">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">CSC 2262</div>
-        <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add com.example.essentialdemo.Class</button>
+        <div class="card-header">CSC 2259</div>
+        <div class="card-body">Time: 12:00p - 1:20p<br>
+            Days: T TH<br>
+        </div>
+        <button class="add-button">Add</button>
     </div>
 </div>
 <div class="card-container">
     <div class="card">
         <div class="card-header">CSC 3501</div>
-        <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 3501', this);" class="add-button" value ="3501">Add com.example.essentialdemo.Class</button>
-
-    </div>
-    <div class="card">
-        <div class="card-header">CSC 2259</div>
-        <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 2259', this);" class="add-button" value ="2259">Add com.example.essentialdemo.Class</button>
+        <div class="card-body">Time: 10:30a - 11:20a<br>
+            Days: M W F<br>
+        </div>
+        <button class="add-button">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CSC 2262</div>
-        <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 2262', this);" class="add-button" value ="2262">Add com.example.essentialdemo.Class</button>
+        <div class="card-body">Time: 1:20p - 2:50p<br>
+            Days: T TH<br>
+        </div>
+        <button class="add-button">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">CSC 4101</div>
-        <div class="card-body">Card Body</div>
-        <button onclick="addClass('CSC 4101', this);" class="add-button" value ="4101">Add com.example.essentialdemo.Class</button>
+        <div class="card-header">CSC 3380</div>
+        <div class="card-body">Time: 3:00p - 4:30p<br>
+            Days: T TH<br>
+        </div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">CSC 3200</div>
+        <div class="card-body">Time: 11:30a - 12:20p<br>
+            Days: M<br></div>
+        <button class="add-button">Add</button>
     </div>
 </div>
 <div class="card-container">
     <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
+        <div class="card-header">CSC 4101</div>
+        <div class="card-body">Time: 1:30p - 2:50p<br>
+            Days: T TH<br>
+        </div>
         <button class="add-button">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
+        <div class="card-header">CSC 4103</div>
+        <div class="card-body">Time: 1:30p - 2:50p<br>
+            Days: M W<br>
+        </div>
         <button class="add-button">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
+        <div class="card-header">CSC 4330</div>
+        <div class="card-body">Time: 4:30p - 5:50p<br>
+            Days: T TH<br>
+        </div>
         <button class="add-button">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">Card Header</div>
-        <div class="card-body">Card Body</div>
+        <div class="card-header">CSC 4402</div>
+        <div class="card-body">Time: 12:00p - 1:20p<br>
+            Days: T TH<br>
+        </div>
         <button class="add-button">Add</button>
     </div>
 </div>
-<script>
-    // function addClass(classCode) {
-    //     var xhr = new XMLHttpRequest();
-    //     xhr.open('POST', 'SoftwareEngineeringServlet', true);
-    //     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    //     xhr.onreadystatechange = function() {
-    //         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-    //             console.log('Data sent successfully');
-    //         }
-    //     };
-    //     xhr.send('classCode=' + encodeURIComponent(classCode));
-    // }
-
-    function addClass(classCode, button) {
-        button.disabled = true; // Disable only the clicked button
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'SoftwareEngineeringServlet', true);
-        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        xhr.onreadystatechange = function() {
-            if (this.readyState === XMLHttpRequest.DONE) {
-                if (this.status === 200) {
-                    console.log('Data sent successfully');
-                    // Redirect to new page
-                    // window.location.href = 'WEB-INF/Software.jsp';
-                } else {
-                    console.log('Error: ' + this.status);
-                    console.log("Failed");
-                }
-            }
-        };
-        xhr.send('classCode=' + classCode); // Send data to server
-    }
-
-    // function sendData() {
-    //     var xhr = new XMLHttpRequest();
-    //     xhr.open('POST', 'SoftwareEngineeringServlet', true);
-    //     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    //     xhr.onreadystatechange = function() {
-    //         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-    //             console.log('Data sent successfully');
-    //         }
-    //     };
-    //     xhr.send('sendData=true');
-    // }
-</script>
+<div class="Humanities">
+    <strong>Mathematics</strong>
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">MATH 1550</div>
+        <div class="card-body">Time: 7:30a - 8:20a<br>
+            Days: M T W TH F
+            <br>
+        </div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">MATH 1552</div>
+        <div class="card-body">Time: 10:30a - 11:20a<br>
+            Days: M T W TH
+            <br>
+        </div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">MATH 2090</div>
+        <div class="card-body">Time: 1:30p - 2:20p<br>
+            Days: M T W TH
+            <br>
+        </div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">IE 3302</div>
+        <div class="card-body">Time: 7:30a - 9:00a<br>
+            Days: T TH
+            <br>
+        </div>
+        <button class="add-button">Add</button>
+    </div>
+</div>
+<div class="Humanities">
+    <strong>English</strong>
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-header">ENGL 1001</div>
+        <div class="card-body">Time: 7:30a - 8:20a<br>
+            Days: M W F
+            <br>
+        </div>
+        <button class="add-button">Add</button>
+    </div>
+    <div class="card">
+        <div class="card-header">ENGL 2000</div>
+        <div class="card-body">Time: 9:30a - 10:20a<br>
+            Days: M W F
+            <br>
+        </div>
+        <button class="add-button">Add</button>
+    </div>
+</div>
 </body>
-
+<script>
+</script>
 </html>

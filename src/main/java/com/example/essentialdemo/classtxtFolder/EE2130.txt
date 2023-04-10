@@ -1,0 +1,16 @@
+Name:EE2130
+Section:1
+Credit Hours:3
+Start:11.30
+Morning?:am
+End:12.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1253
+Building:PATRICK TAYLOR
+Instructor:Rabalais M
+Prereqs:MATH2070,EE2120,PHYS2113

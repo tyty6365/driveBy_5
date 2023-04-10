@@ -1,0 +1,16 @@
+Name:EE3320
+Section:1
+Credit Hours:3
+Start:2.30
+Morning?:pm
+End:3.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1236
+Building:PATRICK TAYLOR
+Instructor:Rabalais M
+Prereqs:EE2130

@@ -1,0 +1,16 @@
+Name:EE4810
+Section:1
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.50
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0204
+Building:TUREAUD HALL
+Instructor:Wei S
+Prereqs:EE3752,EE3150,ENGL2000
