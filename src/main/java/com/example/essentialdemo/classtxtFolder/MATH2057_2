@@ -1,0 +1,16 @@
+Name:MATH2057
+Section:2
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:2.30
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:0112
+Building:LOCKET
+Instructor:HOMAN T
+Prereqs:MATH1550,MATH1552

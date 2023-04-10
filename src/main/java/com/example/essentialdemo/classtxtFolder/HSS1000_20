@@ -1,0 +1,16 @@
+Name:HSS1000
+Section:20
+Credit Hours:1
+Start:8.30
+Morning?:am
+End:9.30
+EndMorning?:am
+M:true
+T:false
+W:false
+TH:false
+F:false
+Room:0112
+Building:HOWE RUSSEL
+Instructor:HOMAN T
+Prereqs:
