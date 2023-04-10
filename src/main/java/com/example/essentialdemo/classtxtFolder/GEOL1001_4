@@ -1,0 +1,16 @@
+Name:GEOL1001
+Section:4
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.30
+EndMorning?:am
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:0112
+Building:HOWE RUSSEL
+Instructor:HOMAN T
+Prereqs:
