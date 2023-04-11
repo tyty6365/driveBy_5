@@ -16,8 +16,11 @@ public class ButtonsPage extends HttpServlet {
         String action = request.getParameter("page");
         switch(action) {
             case "WEB-INF/CurrentSchedule.jsp":
-                ArrayList<Class> willc = (ArrayList<Class>) getServletContext().getAttribute("scheduled");
-                request.setAttribute("sch", willc);
+                User user = (User) getServletContext().getAttribute("User");
+                request.setAttribute("User", user);
+
+
+
                 RequestDispatcher dispatcher1 = request.getRequestDispatcher("WEB-INF/CurrentSchedule.jsp");
                 dispatcher1.forward(request, response);
                 break;

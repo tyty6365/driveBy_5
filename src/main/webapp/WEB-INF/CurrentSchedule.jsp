@@ -81,8 +81,9 @@
 <%
   System.out.println("JSP page displayed");
   User willc = (User) request.getAttribute("User");
-  ArrayList<Class> pp1 = (ArrayList<Class>)request.getAttribute("sch");
-  System.out.println(pp1);
+
+  ArrayList<Class> pp1 = willc.scheduledClasses;
+  System.out.println(pp1.toString());
 %>
 
 <%

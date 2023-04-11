@@ -1,9 +1,9 @@
 Name:CE2700_1
 Section:1
 Credit Hours:1
-Start:1.30
+Start:5.30
 Morning?:pm
-End:4.20
+End:6.20
 EndMorning?:pm
 M:false
 T:false

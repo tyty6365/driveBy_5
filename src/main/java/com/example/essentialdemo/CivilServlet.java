@@ -24,7 +24,7 @@ public class CivilServlet extends HttpServlet {
         request.setAttribute("civiee", civiee);
 
         // forward the request to the JSP page to display the updated scheduled classes
-        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/CivilEngSchedule.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/CivilSchedule.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -32,7 +32,7 @@ public class CivilServlet extends HttpServlet {
 //
         request.setAttribute("civiee", a);
         if (a!=null) {
-            RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/CivilEngSchedule.jsp");
+            RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/CivilSchedule.jsp");
             dispatcherr.forward(request, response);
 //
         }
@@ -49,18 +49,22 @@ public class CivilServlet extends HttpServlet {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + ceClasses+".txt");
+            Course newCourse = new Course("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + ceClasses+".txt");
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
-            ceuser.addClassToSchedule(newClass);
+            String message = ceuser.addClassToSchedule(newClass);
+            System.out.println(message);
             civiee = ceuser.scheduledClasses;
-            for( Class class1 : civiee){
-                System.out.println(class1.name);
-                System.out.println(class1.room);
-                System.out.println(class1.instructor);
+            if(message.equals("Did not pass prereqcheck")) {
+                request.setAttribute("message", "Did not pass prerequisites.");
+            }else if(message.equals("Did not pass DiscrepancyCheck")){
+                request.setAttribute("message", "Time Discrepancy not passed.");
+            }else if(message.equals("Did not pass HoursCheck")) {
+                request.setAttribute("message", "You went over your 19 credit hours limit");
             }
 
-            File classes = new File("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
-            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/CivilEngSchedule.jsp");
+
+
+            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/CivilEngineering.jsp");
             dispatcherrr.forward(request, response);
 
         }
