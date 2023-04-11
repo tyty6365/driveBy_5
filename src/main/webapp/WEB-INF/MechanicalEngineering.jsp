@@ -169,6 +169,14 @@
 <%--<button class="drop-btn" onclick="callMethods('<%= willc.popUpMessage((String)value) %>')">Drop Class</button>--%>
 
 <script>
+    <%
+           String message = (String) request.getAttribute("message");
+           if (message != null) {
+       %>
+    alert("<%= message %>");
+    <%
+        }
+    %>
 
 </script>
 

@@ -58,34 +58,15 @@ public class MechanicalEngineeringServlet extends HttpServlet {
         if(meClasses.equals("schedule")){
             redirection(request, response, pp);
         }else {
-            String username = (String) getServletContext().getAttribute("Username");
-//            System.out.println(username);
-
             Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + meClasses+".txt");
            Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
            String message = willc.addClassToSchedule(newClass);
             System.out.println(message);
              pp = willc.scheduledClasses;
             if(message.equals("Did not pass prereqcheck")) {
-                request.setAttribute("message", message);
-          }
+                request.setAttribute("message", "Did not pass prerequisites.");
 
-//            if(message.equals("Did not pass prereqcheck")) {
-//                request.setAttribute("errorMessage", message);
-//                RequestDispatcher errorMesas = request.getRequestDispatcher("WEB-INF/Software.jsp");
-//                errorMesas.forward(request, response);
-//            } else {
-//                pp = willc.scheduledClasses;
-//                File classes = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
-//                RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
-//                dispatcherrr.forward(request, response);
-//            }
-//            for( Class class1 : pp){
-//                System.out.println(class1.name);
-//                System.out.println(class1.room);
-//                System.out.println(class1.instructor);
-//            }
-//
+          }
 
             RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
             dispatcherrr.forward(request, response);

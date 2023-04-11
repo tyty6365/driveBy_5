@@ -70,6 +70,9 @@
                 }
             });
         }
+
+        <%-- check if message exists and display pop-up if it does --%>
+
     </script>
 </head>
 <body>
