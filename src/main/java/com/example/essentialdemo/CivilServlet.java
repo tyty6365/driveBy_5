@@ -7,30 +7,30 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-@WebServlet(name = "EEServlet", value = "/EEServlet")
-public class EEServlet extends HttpServlet {
-
-    ArrayList<Class> ee = new ArrayList<>();
+@WebServlet(name = "CivilServlet", value = "/CivilServlet")
+public class CivilServlet extends HttpServlet {
+    ArrayList<Class> civiee = new ArrayList<>();
     @Override
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        User eeuser = (User) getServletContext().getAttribute("User");
+        User civiuser = (User) getServletContext().getAttribute("User");
         String className = request.getParameter("className");
-        System.out.println("User: " + eeuser.eightNine);
+        System.out.println("User: " + civiuser.eightNine);
         System.out.println("Dropping class:" + className);
-        eeuser.removeClassFromSchedule(eeuser.eightNine,className);
-        ee = eeuser.scheduledClasses;
-        request.setAttribute("ee", ee);
+        civiuser.removeClassFromSchedule(civiuser.eightNine,className);
+        civiee = civiuser.scheduledClasses;
+        request.setAttribute("civiee", civiee);
 
         // forward the request to the JSP page to display the updated scheduled classes
-        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/EESchedule.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/CivilEngSchedule.jsp");
         dispatcher.forward(request, response);
     }
 
     protected void redirection(HttpServletRequest request, HttpServletResponse response, ArrayList<Class> a) throws ServletException, IOException {
 //
-        request.setAttribute("ee", a);
+        request.setAttribute("civiee", a);
         if (a!=null) {
-            RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/EESchedule.jsp");
+            RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/CivilEngSchedule.jsp");
             dispatcherr.forward(request, response);
 //
         }
@@ -38,31 +38,31 @@ public class EEServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String eeClasses = request.getParameter("EE");
-        User eeuser = (User) getServletContext().getAttribute("User");
-         ee = eeuser.scheduledClasses;
-         if(eeClasses.equals("schedule")){
-            redirection(request, response, ee);
+        String ceClasses = request.getParameter("CiviE");
+        User ceuser = (User) getServletContext().getAttribute("User");
+        civiee = ceuser.scheduledClasses;
+        if(ceClasses.equals("schedule")){
+            redirection(request, response, civiee);
         }else {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + eeClasses+".txt");
+            Course newCourse = new Course("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + ceClasses+".txt");
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
-            eeuser.addClassToSchedule(newClass);
-             ee = eeuser.scheduledClasses;
-            for( Class class1 : ee){
+            ceuser.addClassToSchedule(newClass);
+            civiee = ceuser.scheduledClasses;
+            for( Class class1 : civiee){
                 System.out.println(class1.name);
                 System.out.println(class1.room);
                 System.out.println(class1.instructor);
             }
 
             File classes = new File("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + username);
-            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/ElectricalEngineering.jsp");
+            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/CivilEngSchedule.jsp");
             dispatcherrr.forward(request, response);
 
         }
 
     }
-    }
+}
 

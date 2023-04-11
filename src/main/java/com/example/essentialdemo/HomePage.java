@@ -27,13 +27,13 @@ public class HomePage extends HttpServlet {
         try {
 
 
-            UserFileConvertor w = new UserFileConvertor("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
+            UserFileConvertor w = new UserFileConvertor("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + username);
             ArrayList<Class> wClasses = new ArrayList<>();
             for (int i = 0; i < w.getScheduledClasses().size(); i++) {
 
                 if(w.getScheduledClasses().get(i).equals("PLACEHOLDER")) {}else{
                     String testClass = w.getScheduledClasses().get(i);
-                    Course a = new Course("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + testClass + ".txt");
+                    Course a = new Course("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + testClass + ".txt");
                     wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
                 }
             }

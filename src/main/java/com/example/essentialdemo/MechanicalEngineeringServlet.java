@@ -53,7 +53,7 @@ public class MechanicalEngineeringServlet extends HttpServlet {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + meClasses +".txt");
+            Course newCourse = new Course("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + meClasses+".txt");
            Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
             willc.addClassToSchedule(newClass);
              pp = willc.scheduledClasses;
@@ -63,7 +63,7 @@ public class MechanicalEngineeringServlet extends HttpServlet {
                 System.out.println(class1.instructor);
             }
 
-            File classes = new File("C:\\Users\\mimic\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
+            File classes = new File("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + username);
             RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
             dispatcherrr.forward(request, response);
 
