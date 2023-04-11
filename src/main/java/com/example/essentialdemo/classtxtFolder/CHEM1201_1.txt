@@ -1,16 +1,16 @@
-Name:BIOL1001_1
+Name:CHEM1201_1
 Section:1
 Credit Hours:3
-Start:10.30
+Start:9.30
 Morning?:am
-End:11.20
+End:10.20
 EndMorning?:am
 M:true
 T:false
 W:true
 TH:false
 F:true
-Room:0112
-Building:WILLIAMS
-Instructor:HOMAN T
+Room:0143
+Building:COATES
+Instructor:Hopkins J
 Prereqs:

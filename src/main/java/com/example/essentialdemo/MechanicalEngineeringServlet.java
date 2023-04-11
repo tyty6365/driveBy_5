@@ -58,15 +58,18 @@ public class MechanicalEngineeringServlet extends HttpServlet {
         if(meClasses.equals("schedule")){
             redirection(request, response, pp);
         }else {
-            Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + meClasses+".txt");
+            Course newCourse = new Course("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + meClasses+".txt");
            Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
            String message = willc.addClassToSchedule(newClass);
             System.out.println(message);
              pp = willc.scheduledClasses;
             if(message.equals("Did not pass prereqcheck")) {
                 request.setAttribute("message", "Did not pass prerequisites.");
-
-          }
+            }else if(message.equals("Did not pass DiscrepancyCheck")){
+                request.setAttribute("message", "Time Discrepancy not passed.");
+            }else if(message.equals("Did not pass HoursCheck")) {
+                request.setAttribute("message", "You went over your 19 credit hours limit");
+            }
 
             RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
             dispatcherrr.forward(request, response);

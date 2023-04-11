@@ -77,7 +77,7 @@
 
 <%
     System.out.println("JSP page displayed");
-    User willc = (User) request.getAttribute("User");
+    User ceuser = (User) request.getAttribute("User");
     ArrayList<Class> pp1 = (ArrayList<Class>)request.getAttribute("civiee");
     System.out.println(pp1);
 %>

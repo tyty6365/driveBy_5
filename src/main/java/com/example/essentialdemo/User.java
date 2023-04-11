@@ -21,40 +21,7 @@ public class User {
         scheduledClasses.add(wantsToAdd);
     }
 
-    public String popUpMessage(String message){
-        Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + message + ".txt");
-        Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
 
-        System.out.println(newClass.name);
-        for(int i = 0; i < finishedClasses.size(); i++){
-            if(newClass.name.equals(finishedClasses.get(i))){
-                return "You have already taken this class.";
-            }
-        }
-        for(int i = 0; i < scheduledClasses.size(); i++){
-            if(newClass.name.equals(scheduledClasses.get(i).name)){
-                return "You have already scheduled this class";
-            }
-        }
-        boolean passesHoursCheck = doesNotExceedMaximumHours(newClass);
-        boolean preReqCheck = checkPreReqs(newClass);
-        boolean timeDiscrepancyCheck = checkTimeDiscrepancy(newClass);
-        if(passesHoursCheck && preReqCheck && timeDiscrepancyCheck){
-            return "Successfully added class to schedule!";
-        }else{
-            if(!preReqCheck){
-                return "Did not pass prereqcheck";
-            }
-            else if(!timeDiscrepancyCheck){
-                return "Did not pass DiscrepancyCheck";
-            }
-            else if(!passesHoursCheck){
-                return "Did not pass HoursCheck";
-            }
-        }
-        return "";
-
-    }
 
     public String addClassToSchedule(Class wantsToAdd){
         System.out.println(wantsToAdd.name);
@@ -81,12 +48,14 @@ public class User {
             if(!preReqCheck){
                 return "Did not pass prereqcheck";
             }
+            else if(!passesHoursCheck){
+                System.out.println(ALLOWED_HOURS);
+                return "Did not pass HoursCheck";
+            }
             else if(!timeDiscrepancyCheck){
                 return "Did not pass DiscrepancyCheck";
             }
-            else if(!passesHoursCheck){
-                return "Did not pass HoursCheck";
-            }
+
         }
         return "";
     }
@@ -98,10 +67,6 @@ public class User {
             //goes through each individual scheduled class's days
             for(int j = 0; j < scheduledClasses.get(i).cTime.daysOfWeek.length; j++){
                 if(wantsToAdd.cTime.daysOfWeek[j] == scheduledClasses.get(i).cTime.daysOfWeek[j]){
-
-                    System.out.println(j+"wants to add" + wantsToAdd.cTime.daysOfWeek[j]);
-                    System.out.println(j+"scheduledClasses" + scheduledClasses.get(i).cTime.daysOfWeek[j]);
-
 
                     boolean passedDayComparison = dayComparison(wantsToAdd, scheduledClasses.get(i));
                     if(!passedDayComparison){
@@ -152,15 +117,20 @@ public class User {
         return true;
     }
     public boolean doesNotExceedMaximumHours(Class wantsToAdd){
+        System.out.println("Class: " + wantsToAdd.name);
         boolean passesMaximumHoursCheck = true;
         int wantsToAddHours = wantsToAdd.hours;
+        System.out.println("wantsToAddHours: " + wantsToAdd.hours);
         int scheduledHours = 0;
         for(int i = 0; i < scheduledClasses.size(); i++){
             scheduledHours += scheduledClasses.get(i).hours;
+            System.out.println("scheduled hours: " + scheduledHours);
         }
-        if(wantsToAddHours + scheduledHours > ALLOWED_HOURS){
+        int finalHours = wantsToAddHours + scheduledHours;
+        if(finalHours > ALLOWED_HOURS){
             passesMaximumHoursCheck = false;
         }
+        System.out.println(wantsToAddHours);
         return passesMaximumHoursCheck;
     }
     public boolean checkPreReqs(Class wantsToAdd){

@@ -116,10 +116,11 @@
 
 
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_che_flowchart.pdf"> Chemical Enginnering FlowChart 23/24 </a>
+<form action = "CEServlet" method = post>
+    <button class="add-button" value = "schedule" name="CE">See Schedule</button>
 <div class ="coreclasses">
     <strong>Core Classes</strong>
 </div>
-
 <div class="card-container">
     <div class="card">
         <div class="card-header">CHE 1100</div>
@@ -127,87 +128,91 @@
             Days: M
             <br>
         </div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE1100" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 2171</div>
         <div class="card-body">Time: 1:30p - 2:20p<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE2171" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 2176</div>
         <div class="card-body">Time: 1:30p - 2:20p<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE2176" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 2172</div>
         <div class="card-body">Time: 9:30a - 10:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE2172" name="CE">Add</button>
     </div>
+</div>
+<div class="card-container">
     <div class="card">
         <div class="card-header">CHE 3101</div>
         <div class="card-body">Time: 10:30a - 11:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE3101" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 3171</div>
         <div class="card-body">Time: 12:00p - 1:20p<br>
             Days: T TH</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE3171" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 3173</div>
         <div class="card-body">Time: 9:30a - 10:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE3173" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 3104</div>
         <div class="card-body">Time: 12:30p - 1:20p<br>
             Days: M W</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE3104" name="CE">Add</button>
     </div>
+</div>
+<div class="card-container">
     <div class="card">
         <div class="card-header">CHE 3102</div>
         <div class="card-body">Time: 8:30a - 10:20a<br>
             Days: T TH</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE3102" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 3190</div>
         <div class="card-body">Time: 8:30a - 9:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE3109" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 4162</div>
         <div class="card-body">Time: 4:30p - 5:20p<br>
             Days: M</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE4162" name="CE">Add</button>
     </div>
     <div class="card">
-        <div class="card-header">4151</div>
+        <div class="card-header">CHE 4151</div>
         <div class="card-body">Time: 9:30a - 10:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE4151" name="CE">Add</button>
     </div>
+</div>
     <div class="card">
         <div class="card-header">CHE 4198</div>
         <div class="card-body">Time: 11:30a - 12:20p<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE4198" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHE 4172</div>
         <div class="card-body">Time: 9:30a - 10:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHE4172" name="CE">Add</button>
     </div>
-</div>
 <div class="Humanities">
     <strong>Mathematics</strong>
 </div>
@@ -216,19 +221,19 @@
         <div class="card-header">MATH 1550</div>
         <div class="card-body">Time: 7:30a - 8:20a<br>
             Days: M T W TH F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="MATH1550" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">MATH 1552</div>
         <div class="card-body">Time: 10:30a - 11:20a<br>
             Days: M T W TH</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="MATH1552_2" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">MATH 2090</div>
         <div class="card-body">Time: 1:30p - 2:20p<br>
             Days: M T W TH</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="MATH2090" name="CE">Add</button>
     </div>
 </div>
 <div class="Humanities">
@@ -239,43 +244,45 @@
         <div class="card-header">CHEM 1201</div>
         <div class="card-body">Time: 8:30a - 9:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHEM1201" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHEM 1202</div>
         <div class="card-body">Time: 8:30a - 9:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHEM1202" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHEM 1212</div>
         <div class="card-body">Time: 8:30a - 10:20a<br>
             Days: M W</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHEM1212" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHEM 2261</div>
         <div class="card-body">Time: 11:30a - 12:20p<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHEM2261" name="CE">Add</button>
     </div>
+</div>
+<div class="card-container">
     <div class="card">
         <div class="card-header">CHEM 3492</div>
         <div class="card-body">Time: 11:30a - 12:20p<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHEM3492" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHEM 2262</div>
         <div class="card-body">Time: 10:30a - 11:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHEM2262" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">CHEM 2364</div>
         <div class="card-body">Time: 7:30a - 10:20a<br>
             Days: M W</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="CHEM2364" name="CE">Add</button>
     </div>
 </div>
 <div class="Humanities">
@@ -286,13 +293,13 @@
         <div class="card-header">ENGL 1001</div>
         <div class="card-body">Time: 7:30a - 8:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="ENGL1001_41" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">ENGL 2000</div>
         <div class="card-body">Time: 9:30a - 10:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="ENGL2000" name="CE">Add</button>
     </div>
 </div>
 <div class="Humanities">
@@ -303,33 +310,36 @@
         <div class="card-header">BIOL 1201</div>
         <div class="card-body">Time: 8:30a - 9:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="BIOL1201" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">PHYS 2110</div>
         <div class="card-body">Time: 8:30a - 9:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="PHYS2110" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">PHYS 2113</div>
         <div class="card-body">Time: 7:30a - 8:20a<br>
             Days: M W F</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="PHYS2113" name="CE">Add</button>
     </div>
     <div class="card">
         <div class="card-header">ECON 2030</div>
         <div class="card-body">Time: 7:30a - 8:20a<br>
             Days: M W</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="ECON2030" name="CE">Add</button>
     </div>
+</div>
+<div class="card-container">
     <div class="card">
         <div class="card-header">ME 2733</div>
         <div class="card-body">Time: 9:00a - 10:20a<br>
             Days: T TH</div>
-        <button class="add-button">Add</button>
+        <button class="add-button" value="ME2733" name="CE">Add</button>
     </div>
 </div>
+</form>
 </body>
 <script>
 </script>

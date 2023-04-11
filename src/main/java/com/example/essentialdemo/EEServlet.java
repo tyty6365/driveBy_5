@@ -48,18 +48,26 @@ public class EEServlet extends HttpServlet {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + eeClasses+".txt");
+            Course newCourse = new Course("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + eeClasses+".txt");
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
-            eeuser.addClassToSchedule(newClass);
+
              ee = eeuser.scheduledClasses;
             for( Class class1 : ee){
                 System.out.println(class1.name);
                 System.out.println(class1.room);
                 System.out.println(class1.instructor);
             }
-
-            File classes = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
-            RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/ElectricalEngineering.jsp");
+             String message = eeuser.addClassToSchedule(newClass);
+             System.out.println(message);
+             ee = eeuser.scheduledClasses;
+             if(message.equals("Did not pass prereqcheck")) {
+                 request.setAttribute("message", "Did not pass prerequisites.");
+             }else if(message.equals("Did not pass DiscrepancyCheck")){
+                 request.setAttribute("message", "Time Discrepancy not passed.");
+             }else if(message.equals("Did not pass HoursCheck")) {
+                 request.setAttribute("message", "You went over your 19 credit hours limit");
+             }
+             RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/ElectricalEngineering.jsp");
             dispatcherrr.forward(request, response);
 
         }

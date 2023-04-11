@@ -48,7 +48,7 @@ public class CompSciServlet extends HttpServlet {
             String username_new = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + CompSciClasses+".txt");
+            Course newCourse = new Course("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + CompSciClasses+".txt");
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
             cseuser.addClassToSchedule(newClass);
             cse = cseuser.scheduledClasses;
@@ -58,7 +58,7 @@ public class CompSciServlet extends HttpServlet {
                 System.out.println(class1.instructor);
             }
 
-            File classes = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username_new);
+            File classes = new File("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username_new);
             RequestDispatcher dispatcher_new = request.getRequestDispatcher("WEB-INF/CompSciSchedule.jsp");
             dispatcher_new.forward(request, response);
 

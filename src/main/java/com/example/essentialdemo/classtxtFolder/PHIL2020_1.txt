@@ -1,0 +1,16 @@
+Name:PHIL2020_1
+Section:1
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.50
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0139
+Building:ALLEN
+Instructor:Kelley A
+Prereqs:

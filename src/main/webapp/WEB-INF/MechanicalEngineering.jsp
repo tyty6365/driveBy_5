@@ -125,38 +125,153 @@
 
 
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_che_flowchart.pdf"> Mechanical Engineering FlowChart 23-24 </a>
-<div class ="coreclasses">
-    <strong>Critial Classes</strong>
-</div>
 <form action = "MechanicalEngineeringServlet" method = post>
+    <button class="add-button" value = "schedule" name="ME">See Schedule</button>
+    <div class ="coreclasses">
+        <strong>General Classes</strong>
+    </div>
     <div class="card-container">
         <div class="card">
-            <div class="card-header">CHEM 1001</div>
-            <div class="card-body">Time<br>
-                Days:
+            <div class="card-header">MATH 1550</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M W F
                 <br>
             </div>
-            <button class="add-button" value = "CHEM1001_1" name="ME" onclick="callMethods(this.value)">Add Class</button>
+            <button class="add-button" value="MATH1550_9" name="ME">Add</button>
         </div>
         <div class="card">
-            <div class="card-header">MATH 2090 </div>
-            <div class="card-body">Time<br>
-                Days:</div>
-            <button class="add-button" value = "MATH2090_1" name="ME" onclick="callMethods(this.value)">Add Class</button>
+            <div class="card-header">ENGL 1001</div>
+            <div class="card-body">Time: 8:30a - 9:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="ENGL1001_41" name="ME">Add</button>
         </div>
         <div class="card">
-            <div class="card-header">GEOL 1001</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button" value = "GEOL1001_4" name="ME" onclick="callMethods(this.value)">Add Class</button>
+            <div class="card-header">CHEM 1201</div>
+            <div class="card-body">Time: 9:30a - 10:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="CHEM1201_1" name="ME">Add</button>
         </div>
         <div class="card">
-            <div class="card-header">HIST 1000</div>
-            <div class="card-body">Card Body</div>
-            <button class="add-button" value = "HSS1000_19" name="ME">Add Class</button>
+            <div class="card-header">BIOL 1001</div>
+            <div class="card-body">Time: 10:30a - 11:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="BIOL1001_1" name="ME">Add</button>
         </div>
-        <button class="add-button" value = "schedule" name="ME" onclick="callMethods(this.value)">See Schedule</button>
+    </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">ASTRO 1101</div>
+            <div class="card-body">Time: 11:30a - 12:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="ASTRO1101_1" name="ME">Add</button>
+        </div>
+        <div class="card">
+            <div class="card-header">ART 1001</div>
+            <div class="card-body">Time: 12:30p - 1:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="ART1001_1" name="ME">Add</button>
+        </div>
+    </div>
+    <div class="Humanities">
+        <strong>Core Classes</strong>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">ME 1212</div>
+            <div class="card-body">Time: 8:30a - 9:20a<br>
+                Days: T TH
+                <br>
+            </div>
+            <button class="add-button" value="ME1212_1" name="ME">Add</button>
+        </div>
+        <div class="card">
+            <div class="card-header">ME 2334</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M T W TH F
+                <br>
+            </div>
+            <button class="add-button" value="ME2334_1" name="ME">Add</button>
+        </div>
+        <div class="card">
+            <div class="card-header">ME 2733</div>
+            <div class="card-body">Time: 9:00a - 10:20a<br>
+                Days: T TH
+                <br>
+            </div>
+            <button class="add-button" value="ME2733_1" name="ME">Add</button>
+        </div>
+        <div class="card">
+            <div class="card-header">ME 3633</div>
+            <div class="card-body">Time: 10:30a - 11:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="ME3633_1" name="ME">Add</button>
+        </div>
+    </div>
+    <div class="Humanities">
+        <strong>Humanities</strong>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">PHIL 2020</div>
+            <div class="card-body">Time: 2:30p - 3:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="PHIL2020_1" name="ME">Add</button>
+        </div>
+        <div class="card">
+            <div class="card-header">CMST 1061</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="CMST1061_1" name="ME">Add</button>
+        </div>
+    </div><div class="Humanities">
+    <strong>Physics</strong>
+</div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">PHYS 1201</div>
+            <div class="card-body">Time: 8:30a - 11:20a<br>
+                Days: M
+                <br>
+            </div>
+            <button class="add-button" value="PHYS1201_1" name="ME">Add</button>
+        </div>
+        <div class="card">
+            <div class="card-header">PHYS 2108</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="PHYS2108_1" name="ME">Add</button>
+        </div>
+        <div class="card">
+        <div class="card-header">PHYS 2110</div>
+        <div class="card-body">Time: 7:30a - 8:20a<br>
+            Days: M W F
+            <br>
+        </div>
+        <button class="add-button" value="PHYS2110_1" name="ME">Add</button>
+    </div>
+
 
     </div>
+
 </form>
 
 

@@ -1,0 +1,16 @@
+Name:MATH2070_1
+Section:1
+Credit Hours:4
+Start:10.30
+Morning?:am
+End:11.20
+EndMorning?:am
+M:true
+T:true
+W:true
+TH:true
+F:false
+Room:0145
+Building:COATES
+Instructor:n/a
+Prereqs:MATH1552

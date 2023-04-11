@@ -1,0 +1,16 @@
+Name:PHYS1201_1
+Section:1
+Credit Hours:4
+Start:10.30
+Morning?:am
+End:11.20
+EndMorning?:am
+M:true
+T:true
+W:true
+TH:true
+F:false
+Room:0119
+Building:NICHOLSON
+Instructor:n/a
+Prereqs:

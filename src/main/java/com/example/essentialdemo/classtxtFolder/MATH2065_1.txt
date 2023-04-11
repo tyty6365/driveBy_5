@@ -1,4 +1,4 @@
-Name:BIOL1001_1
+Name:MATH2065_1
 Section:1
 Credit Hours:3
 Start:10.30
@@ -10,7 +10,7 @@ T:false
 W:true
 TH:false
 F:true
-Room:0112
-Building:WILLIAMS
-Instructor:HOMAN T
-Prereqs:
+Room:0228
+Building:COATES
+Instructor:n/a
+Prereqs:MATH1552

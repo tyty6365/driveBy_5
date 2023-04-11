@@ -1,4 +1,4 @@
-Name:ASTRO1101_1
+Name:CHEM2261_1
 Section:1
 Credit Hours:3
 Start:11.30
@@ -10,7 +10,7 @@ T:false
 W:true
 TH:false
 F:true
-Room:0112
-Building:NICHOLSON
-Instructor:HOMAN T
-Prereqs:
+Room:0103
+Building:WILLIAMS
+Instructor:Ragains J
+Prereqs:CHEM1202

@@ -117,270 +117,165 @@
 
 <a href="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ee_flowchart.pdf"> Engineering FlowChart 23-24
     FlowChart 23/24 </a>
-<div class="coreclasses">
-    <strong>Core Classes</strong>
-</div>
-
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">EE 1810</div>
-        <div class="card-body">Time: 3:00p - 3:50p<br>
-            Days: T
-            <br>
-        </div>
-        <button class="add-button">Add</button>
+<form action = "EEServlet" method = post>
+    <button class="add-button" value = "schedule" name="EE">See Schedule</button>
+    <div class ="coreclasses">
+        <strong>General Classes</strong>
     </div>
-    <div class="card">
-        <div class="card-header">EE 2741</div>
-        <div class="card-body">Time: 10:30a - 11:20a<br>
-            Days: M W
-            <br>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">MATH 1550</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="MATH1550_9" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">CSC 1253</div>
-        <div class="card-body">Time: 12:00p - 1:20p<br>
-            Days: T TH
-            <br>
+        <div class="card">
+            <div class="card-header">ENGL 1001</div>
+            <div class="card-body">Time: 8:30a - 9:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="ENGL1001_41" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 2742</div>
-        <div class="card-body">Time: 1:30p - 2:20p<br>
-            Days: TH
-            <br>
+        <div class="card">
+            <div class="card-header">CHEM 1201</div>
+            <div class="card-body">Time: 9:30a - 10:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="CHEM1201_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 2120</div>
-        <div class="card-body">Time: 9:30a - 10:20a<br>
-            Days: M W F
-            <br>
+        <div class="card">
+            <div class="card-header">BIOL 1001</div>
+            <div class="card-body">Time: 10:30a - 11:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="BIOL1001_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
     </div>
-    <div class="card">
-        <div class="card-header">EE 2130</div>
-        <div class="card-body">Time: 11:30a - 12:20p<br>
-            Days: M W F
-            <br>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">ASTRO 1101</div>
+            <div class="card-body">Time: 11:30a - 12:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="ASTRO1101_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 2810</div>
-        <div class="card-body">Time: 9:00a - 9:50a<br>
-            Days: T
-            <br>
+        <div class="card">
+            <div class="card-header">ART 1001</div>
+            <div class="card-body">Time: 12:30p - 1:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="ART1001_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
     </div>
-    <div class="card">
-        <div class="card-header">EE 2230</div>
-        <div class="card-body">Time: 7:30a - 8:20a<br>
-            Days: M W F
-            <br>
+    <div class="Humanities">
+        <strong>Core Classes</strong>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">EE 1801</div>
+            <div class="card-body">Time: 8:30a - 9:20a<br>
+                Days: T TH
+                <br>
+            </div>
+            <button class="add-button" value="EE1801_2" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 2331</div>
-        <div class="card-body">Time: 7:30a - 8:20a<br>
-            Days: T
-            <br>
+        <div class="card">
+            <div class="card-header">EE 1810</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M T W TH F
+                <br>
+            </div>
+            <button class="add-button" value="EE1810_5" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 3150</div>
-        <div class="card-body">Time: 8:30a - 9:20a<br>
-            Days: M W F
-            <br>
+        <div class="card">
+            <div class="card-header">EE 2120</div>
+            <div class="card-body">Time: 9:00a - 10:20a<br>
+                Days: T TH
+                <br>
+            </div>
+            <button class="add-button" value="EE2120_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 3610</div>
-        <div class="card-body">Time: 9:30a - 10:20a<br>
-            Days: M W F
-            <br>
+        <div class="card">
+            <div class="card-header">EE 2130</div>
+            <div class="card-body">Time: 10:30a - 11:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="EE2130_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
     </div>
-    <div class="card">
-        <div class="card-header">EE 3320</div>
-        <div class="card-body">Time: 2:30p - 3:20p<br>
-            Days: M W F
-            <br>
+    <div class="Humanities">
+        <strong>Humanities</strong>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">PHIL 2020</div>
+            <div class="card-body">Time: 2:30p - 3:20p<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="PHIL2020_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 4810</div>
-        <div class="card-body">Time: 10:30a - 11:50a<br>
-            Days: T TH
-            <br>
+        <div class="card">
+            <div class="card-header">CMST 1061</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="CMST1061_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="Humanities">
-    <strong>Mathematics</strong>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">MATH 1550</div>
-        <div class="card-body">Time: 7:30a - 8:20a<br>
-            Days: M T W TH F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">MATH 1552</div>
-        <div class="card-body">Time: 10:30a - 11:20a<br>
-            Days: M T W TH
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">MATH 2070</div>
-        <div class="card-body">Time: 10:30a - 11:20a<br>
-            Days: M T W TH
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">MATH 2057</div>
-        <div class="card-body">Time: 12:30p - 1:20p<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="Humanities">
+    </div><div class="Humanities">
     <strong>Physics</strong>
 </div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">PHYS 2110</div>
-        <div class="card-body">Time: 8:30a - 9:20a<br>
-            Days: M W F
-            <br>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">PHYS 1201</div>
+            <div class="card-body">Time: 8:30a - 11:20a<br>
+                Days: M
+                <br>
+            </div>
+            <button class="add-button" value="PHYS1201_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">PHYS 2108</div>
-        <div class="card-body">Time: 8:30a - 11:20a<br>
-            Days: M
-            <br>
+        <div class="card">
+            <div class="card-header">PHYS 2108</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="PHYS2108_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">PHYS 2113</div>
-        <div class="card-body">Time: 7:30a - 8:20a<br>
-            Days: M W F
-            <br>
+        <div class="card">
+            <div class="card-header">PHYS 2110</div>
+            <div class="card-body">Time: 7:30a - 8:20a<br>
+                Days: M W F
+                <br>
+            </div>
+            <button class="add-button" value="PHYS2110_1" name="EE">Add</button>
         </div>
-        <button class="add-button">Add</button>
+
+
     </div>
-</div>
-<div class="Humanities">
-    <strong>English</strong>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">ENGL 1001</div>
-        <div class="card-body">Time: 7:30a - 8:20a<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">ENGL 2000</div>
-        <div class="card-body">Time: 9:30a - 10:20a<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="Humanities">
-    <strong>EE Breadth</strong>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">EE 3160 DSP</div>
-        <div class="card-body">Time: 9:30a - 10:20a<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 3232</div>
-        <div class="card-body">Time: 11:30a - 12:20p<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 3410</div>
-        <div class="card-body">Time: 4:30p - 5:50p<br>
-            Days: M W
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 3530</div>
-        <div class="card-body">Time: 3:30p - 4:20p<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 3752</div>
-        <div class="card-body">Time: 12:30p - 1:20p<br>
-            Days: M W
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-    <div class="card">
-        <div class="card-header">EE 3755</div>
-        <div class="card-body">Time: 1:30p - 2:20p<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
-<div class="Humanities">
-    <strong>Other</strong>
-</div>
-<div class="card-container">
-    <div class="card">
-        <div class="card-header">PHIL 2020</div>
-        <div class="card-body">Time: 2:30p - 3:20p<br>
-            Days: M W F
-            <br>
-        </div>
-        <button class="add-button">Add</button>
-    </div>
-</div>
+
+
+</form>
 </body>
 <script>
+    <%
+           String message = (String) request.getAttribute("message");
+           if (message != null) {
+       %>
+    alert("<%= message %>");
+    <%
+        }
+    %>
+
 </script>
 </html>

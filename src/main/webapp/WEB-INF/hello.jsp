@@ -123,7 +123,7 @@
     <div class="button-container">
 
 
-        <button class="button" type="submit" name="page" value="WEB-INF/index.jsp">HomePage</button>
+        <button class="button" type="submit" name="page" value="WEB-INF/CurrentSchedule.jsp">Current Schedule</button>
 
         <button  class="button" type="submit" name="page" value="WEB-INF/IT_Support.jsp">IT Support</button>
 

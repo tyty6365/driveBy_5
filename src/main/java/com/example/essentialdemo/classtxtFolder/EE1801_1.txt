@@ -1,14 +1,14 @@
 Name:EE1801_1
 Section:1
 Credit Hours:2
-Start:3
-Morning?:pm
-End:3.50
-EndMorning?:pm
+Start:8.30
+Morning?:am
+End:9.50
+EndMorning?:am
 M:false
 T:true
 W:false
-TH:false
+TH:true
 F:false
 Room:0204
 Building:TUREAUD HALL

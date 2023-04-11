@@ -1,5 +1,5 @@
-Name:ENGL1001_41
-Section:41
+Name:CHEM1202_1
+Section:1
 Credit Hours:3
 Start:8.30
 Morning?:am
@@ -10,7 +10,7 @@ T:false
 W:true
 TH:false
 F:true
-Room:0112
-Building:ALLEN
-Instructor:HOMAN T
-Prereqs:
+Room:W130
+Building:HOWE RUSSEL WE
+Instructor:Hogan J
+Prereqs:CHEM1201

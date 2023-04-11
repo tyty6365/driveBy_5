@@ -1,0 +1,16 @@
+Name:ECON2030_1
+Section:1
+Credit Hours:3
+Start:7.30
+Morning?:am
+End:8.20
+EndMorning?:am
+M:true
+T:false
+W:true
+TH:false
+F:false
+Room:0100
+Building:DODSON
+Instructor:Roussel C
+Prereqs:

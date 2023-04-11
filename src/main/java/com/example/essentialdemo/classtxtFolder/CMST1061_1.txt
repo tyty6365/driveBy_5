@@ -1,16 +1,16 @@
-Name:MATH1550_1
+Name:CMST1061_1
 Section:1
-Credit Hours:5
+Credit Hours:3
 Start:7.30
 Morning?:am
 End:8.20
 EndMorning?:am
 M:true
-T:true
+T:false
 W:true
-TH:true
+TH:false
 F:true
-Room:0155
+Room:0130
 Building:COATES
-Instructor:HOMAN T
+Instructor:Herbert L
 Prereqs:

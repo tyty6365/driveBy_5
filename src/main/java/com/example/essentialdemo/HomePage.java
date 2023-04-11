@@ -27,13 +27,13 @@ public class HomePage extends HttpServlet {
         try {
 
 
-            UserFileConvertor w = new UserFileConvertor("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
+            UserFileConvertor w = new UserFileConvertor("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
             ArrayList<Class> wClasses = new ArrayList<>();
             for (int i = 0; i < w.getScheduledClasses().size(); i++) {
 
                 if(w.getScheduledClasses().get(i).equals("PLACEHOLDER")) {}else{
                     String testClass = w.getScheduledClasses().get(i);
-                    Course a = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + testClass + ".txt");
+                    Course a = new Course("C:\\Users\\xandr\\IdeaProjects\\essentialDemoOff\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + testClass + ".txt");
                     wClasses.add(new Class(a.name, a.section, a.creditHours, a.days, a.start, a.morning, a.end, a.endMorning, a.building, a.room, a.instructor, a.prereqs));
                 }
             }
@@ -41,8 +41,13 @@ public class HomePage extends HttpServlet {
             for (int i = 0; i < wClasses.size(); i++) {
                 willc.fileAddToSchedule(wClasses.get(i));
             }
-
             request.setAttribute("scheduled",willc.scheduledClasses);
+//            boolean test = true;
+//            if(test){
+//                request.setAttribute("scheduled",willc.scheduledClasses);
+//                RequestDispatcher schedule = request.getRequestDispatcher("WEB-INF/CurrentSchedule.jsp");
+//                schedule.forward(request, response);
+//            }
 
 
             getServletContext().setAttribute("User",willc);

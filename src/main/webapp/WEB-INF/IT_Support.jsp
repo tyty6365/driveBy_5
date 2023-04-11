@@ -74,7 +74,6 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="#">BACK</a>
     <a href="#" style="float:right">myLSU</a>
 </div>
 <h1 style="text-align:center">IT Support</h1>

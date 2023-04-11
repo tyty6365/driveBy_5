@@ -1,0 +1,16 @@
+Name:INTL2000_5
+Section:5
+Credit Hours:3
+Start:1.30
+Morning?:pm
+End:2.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:0169
+Building:RES COLL ONE W
+Instructor:Nicklen C
+Prereqs:

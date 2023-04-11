@@ -5,6 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.ArrayList;
 //import org.json.simple.JSONObject;
 
 @WebServlet("/hello-servlet")
@@ -14,9 +15,10 @@ public class ButtonsPage extends HttpServlet {
 
         String action = request.getParameter("page");
         switch(action) {
-            case "WEB-INF/index.jsp":
-
-                RequestDispatcher dispatcher1 = request.getRequestDispatcher("index.jsp");
+            case "WEB-INF/CurrentSchedule.jsp":
+                ArrayList<Class> willc = (ArrayList<Class>) getServletContext().getAttribute("scheduled");
+                request.setAttribute("sch", willc);
+                RequestDispatcher dispatcher1 = request.getRequestDispatcher("WEB-INF/CurrentSchedule.jsp");
                 dispatcher1.forward(request, response);
                 break;
             case "WEB-INF/flowchart.jsp":
