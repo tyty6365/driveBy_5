@@ -1,4 +1,4 @@
-Name:CSC1351
+Name:CSC1351_1
 Section:1
 Credit Hours:4
 Start:10.30

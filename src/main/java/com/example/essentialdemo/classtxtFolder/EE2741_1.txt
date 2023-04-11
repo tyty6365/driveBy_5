@@ -1,4 +1,4 @@
-Name:EE2741
+Name:EE2741_1
 Section:1
 Credit Hours:3
 Start:10.30

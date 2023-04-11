@@ -1,4 +1,4 @@
-Name:ART1001
+Name:ART1001_3
 Section:3
 Credit Hours:3
 Start:2.30

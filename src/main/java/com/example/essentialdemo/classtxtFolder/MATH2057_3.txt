@@ -1,4 +1,4 @@
-Name:MATH2057
+Name:MATH2057_3
 Section:3
 Credit Hours:3
 Start:2.30

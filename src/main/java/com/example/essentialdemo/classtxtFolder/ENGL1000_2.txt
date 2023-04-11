@@ -1,4 +1,4 @@
-Name:ENGL1000
+Name:ENGL1000_2
 Section:2
 Credit Hours:3
 Start:2.30

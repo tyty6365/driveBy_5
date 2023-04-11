@@ -1,4 +1,4 @@
-Name:ASTRO1101
+Name:ASTRO1101_1
 Section:1
 Credit Hours:3
 Start:8.30

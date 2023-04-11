@@ -1,0 +1,16 @@
+Name:CE2700_1
+Section:1
+Credit Hours:1
+Start:1.30
+Morning?:pm
+End:4.20
+EndMorning?:pm
+M:false
+T:false
+W:false
+TH:false
+F:true
+Room:n/a
+Building:n/a
+Instructor:n/a
+Prereqs:

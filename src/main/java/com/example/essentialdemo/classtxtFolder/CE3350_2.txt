@@ -1,4 +1,4 @@
-Name:CE3350
+Name:CE3350_2
 Section:2
 Credit Hours:1
 Start:12.30

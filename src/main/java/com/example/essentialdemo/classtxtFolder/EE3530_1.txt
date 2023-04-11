@@ -1,0 +1,16 @@
+Name:EE3530_1
+Section:1
+Credit Hours:3
+Start:3.30
+Morning?:pm
+End:4.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1225
+Building:PATRICK TAYLOR
+Instructor:Gu G
+Prereqs:EE2130

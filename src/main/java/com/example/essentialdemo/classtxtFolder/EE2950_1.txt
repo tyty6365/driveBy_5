@@ -1,4 +1,4 @@
-Name:EE2950
+Name:EE2950_1
 Section:1
 Credit Hours:3
 Start:10.30

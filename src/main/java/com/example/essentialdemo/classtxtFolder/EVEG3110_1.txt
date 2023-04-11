@@ -1,0 +1,16 @@
+Name:EVEG3110_1
+Section:1
+Credit Hours:3
+Start:12
+Morning?:pm
+End:1.20
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0221
+Building:TUREAUD HALL
+Instructor:Snow S
+Prereqs:CE2200

@@ -1,4 +1,4 @@
-Name:CSC3200
+Name:CSC3200_1
 Section:1
 Credit Hours:1
 Start:11.30

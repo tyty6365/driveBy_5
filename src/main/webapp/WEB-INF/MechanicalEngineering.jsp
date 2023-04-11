@@ -5,8 +5,16 @@
   Time: 10:06 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="com.example.*"%>
+<%@ page import="java.lang.reflect.Array" %>
+<%@ page import="com.example.essentialdemo.Class" %>
+<%@ page import="com.example.essentialdemo.User" %>
+<%@ page import="com.example.essentialdemo.DropCourse" %>
+
 <!DOCTYPE html>
 <html>
+<% User willc = (User) request.getAttribute("User");%>
 <style>
     html, body {
         height:
@@ -123,30 +131,30 @@
 <form action = "MechanicalEngineeringServlet" method = post>
     <div class="card-container">
         <div class="card">
-            <div class="card-header">CE 2200</div>
+            <div class="card-header">CHEM 1001</div>
             <div class="card-body">Time<br>
                 Days:
                 <br>
             </div>
-            <button class="add-button" value = "CE2200" name="ME">Add Class</button>
+            <button class="add-button" value = "CHEM1001_1" name="ME" onclick="callMethods(this.value)">Add Class</button>
         </div>
         <div class="card">
-            <div class="card-header">CE 2700</div>
+            <div class="card-header">MATH 2090 </div>
             <div class="card-body">Time<br>
                 Days:</div>
-            <button class="add-button" value = "CE2700" name="ME">Add Class</button>
+            <button class="add-button" value = "MATH2090_1" name="ME" onclick="callMethods(this.value)">Add Class</button>
         </div>
         <div class="card">
-            <div class="card-header">CSC 1350</div>
+            <div class="card-header">GEOL 1001</div>
             <div class="card-body">Card Body</div>
-            <button class="add-button" value = "CSC1350_1" name="ME">Add Class</button>
+            <button class="add-button" value = "GEOL1001_4" name="ME" onclick="callMethods(this.value)">Add Class</button>
         </div>
         <div class="card">
-            <div class="card-header">CSC 3380</div>
+            <div class="card-header">HIST 1000</div>
             <div class="card-body">Card Body</div>
-            <button class="add-button" value = "CSC3380" name="ME">Add Class</button>
+            <button class="add-button" value = "HSS1000_19" name="ME">Add Class</button>
         </div>
-        <button class="add-button" value = "schedule" name="ME">See Schedule</button>
+        <button class="add-button" value = "schedule" name="ME" onclick="callMethods(this.value)">See Schedule</button>
 
     </div>
 </form>
@@ -157,7 +165,20 @@
 
 
 </body>
+
+<%--<button class="drop-btn" onclick="callMethods('<%= willc.popUpMessage((String)value) %>')">Drop Class</button>--%>
+
 <script>
+
 </script>
+
+<%--<script>--%>
+<%--    // JavaScript code to display the message--%>
+<%--    var message = '<%= request.getAttribute("message") %>';--%>
+<%--    if (message !== null && message !== '') {--%>
+<%--        alert(message);--%>
+<%--    }--%>
+<%--</script>--%>
+
 </html>
 

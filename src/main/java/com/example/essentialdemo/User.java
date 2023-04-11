@@ -21,48 +21,74 @@ public class User {
         scheduledClasses.add(wantsToAdd);
     }
 
-    public void addClassToSchedule(Class wantsToAdd){
+    public String popUpMessage(String message){
+        Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + message + ".txt");
+        Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
+
+        System.out.println(newClass.name);
+        for(int i = 0; i < finishedClasses.size(); i++){
+            if(newClass.name.equals(finishedClasses.get(i))){
+                return "You have already taken this class.";
+            }
+        }
+        for(int i = 0; i < scheduledClasses.size(); i++){
+            if(newClass.name.equals(scheduledClasses.get(i).name)){
+                return "You have already scheduled this class";
+            }
+        }
+        boolean passesHoursCheck = doesNotExceedMaximumHours(newClass);
+        boolean preReqCheck = checkPreReqs(newClass);
+        boolean timeDiscrepancyCheck = checkTimeDiscrepancy(newClass);
+        if(passesHoursCheck && preReqCheck && timeDiscrepancyCheck){
+            return "Successfully added class to schedule!";
+        }else{
+            if(!preReqCheck){
+                return "Did not pass prereqcheck";
+            }
+            else if(!timeDiscrepancyCheck){
+                return "Did not pass DiscrepancyCheck";
+            }
+            else if(!passesHoursCheck){
+                return "Did not pass HoursCheck";
+            }
+        }
+        return "";
+
+    }
+
+    public String addClassToSchedule(Class wantsToAdd){
         System.out.println(wantsToAdd.name);
         for(int i = 0; i < finishedClasses.size(); i++){
             if(wantsToAdd.name.equals(finishedClasses.get(i))){
-                //return error message to com.example.essentialdemo.User saying they've already taken class
+                return "You have already taken this class.";
             }
         }
-
         for(int i = 0; i < scheduledClasses.size(); i++){
             if(wantsToAdd.name.equals(scheduledClasses.get(i).name)){
-                //return error message to com.example.essentialdemo.User saying they are already taking this class
+                return "You have already scheduled this class";
             }
         }
-
         boolean passesHoursCheck = doesNotExceedMaximumHours(wantsToAdd);
         boolean preReqCheck = checkPreReqs(wantsToAdd);
         boolean timeDiscrepancyCheck = checkTimeDiscrepancy(wantsToAdd);
         if(passesHoursCheck && preReqCheck && timeDiscrepancyCheck){
             scheduledClasses.add(wantsToAdd);
-
             System.out.println(this.eightNine);
             System.out.println(wantsToAdd.name);
-
             UpdateUserText.updateTextFile(this.eightNine, wantsToAdd.name);
-            //send user a message saying class successfully scheduled
+            return "Successfully added class to schedule!";
         }else{
             if(!preReqCheck){
-                System.out.println("Did not pass prereqcheck");
-                //return statement to user that they have not completed the required prerequisites for this class
-                //break
+                return "Did not pass prereqcheck";
             }
             else if(!timeDiscrepancyCheck){
-                System.out.println("Did not pass DiscrepancyCheck");
-                //return statement to user that they have a time discrepancy with a class that is already scheduled
-                //break
+                return "Did not pass DiscrepancyCheck";
             }
             else if(!passesHoursCheck){
-                System.out.println("Did not pass HoursCheck");
-                //return statement to user that scheduling this class would exceed the maximum number of scheduling hours allowed
-                //break
+                return "Did not pass HoursCheck";
             }
         }
+        return "";
     }
     public boolean checkTimeDiscrepancy(Class wantsToAdd){
 
@@ -170,6 +196,7 @@ public class User {
         return passesPreReqCheck;
     }
     public void removeClassFromSchedule(String userName, String wantsToRemove){
+
         for(int i = 0; i < scheduledClasses.size(); i++){
             if(wantsToRemove.equals(scheduledClasses.get(i).name)){
                 scheduledClasses.remove(scheduledClasses.get(i));

@@ -1,4 +1,4 @@
-Name:MATH1550
+Name:MATH1550_12
 Section:12
 Credit Hours:5
 Start:10.30

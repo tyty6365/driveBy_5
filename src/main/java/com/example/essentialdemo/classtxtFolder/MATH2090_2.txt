@@ -1,4 +1,4 @@
-Name:MATH2090
+Name:MATH2090_2
 Section:2
 Credit Hours:4
 Start:9.30

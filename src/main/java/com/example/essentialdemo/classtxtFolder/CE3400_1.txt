@@ -1,4 +1,4 @@
-Name:CE3400
+Name:CE3400_1
 Section:1
 Credit Hours:3
 Start:10.30

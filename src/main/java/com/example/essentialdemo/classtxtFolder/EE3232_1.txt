@@ -1,0 +1,16 @@
+Name:EE3232_1
+Section:1
+Credit Hours:3
+Start:11.30
+Morning?:am
+End:12.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1236
+Building:PATRICK TAYLOR
+Instructor:Daniels-Race
+Prereqs:

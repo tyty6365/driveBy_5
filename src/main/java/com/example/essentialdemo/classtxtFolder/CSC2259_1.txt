@@ -1,4 +1,4 @@
-Name:CSC2259
+Name:CSC2259_1
 Section:1
 Credit Hours:3
 Start:12

@@ -1,4 +1,4 @@
-Name:GEOL1001
+Name:GEOL1001_4
 Section:4
 Credit Hours:3
 Start:10.30

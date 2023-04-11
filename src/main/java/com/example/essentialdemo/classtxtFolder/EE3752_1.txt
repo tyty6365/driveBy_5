@@ -1,4 +1,4 @@
-Name:EE3752
+Name:EE3752_1
 Section:1
 Credit Hours:3
 Start:12.30

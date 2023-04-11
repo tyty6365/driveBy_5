@@ -1,4 +1,4 @@
-Name:EE2231
+Name:EE2231_2
 Section:2
 Credit Hours:2
 Start:7.30

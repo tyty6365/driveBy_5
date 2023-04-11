@@ -1,4 +1,4 @@
-Name:CSC2262
+Name:CSC2262_1
 Section:1
 Credit Hours:3
 Start:9

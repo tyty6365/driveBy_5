@@ -1,4 +1,4 @@
-Name:EE2810
+Name:EE2810_1
 Section:1
 Credit Hours:2
 Start:9

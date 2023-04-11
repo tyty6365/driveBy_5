@@ -1,4 +1,4 @@
-Name:CHEM1001
+Name:CHEM1001_1
 Section:1
 Credit Hours:3
 Start:9.30

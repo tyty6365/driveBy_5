@@ -1,4 +1,4 @@
-Name:HSS1000
+Name:HSS1000_19
 Section:19
 Credit Hours:1
 Start:8.30

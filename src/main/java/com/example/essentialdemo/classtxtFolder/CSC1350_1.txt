@@ -1,4 +1,4 @@
-Name:CSC1350
+Name:CSC1350_1
 Section:1
 Credit Hours:4
 Start:9.30

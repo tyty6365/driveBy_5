@@ -1,4 +1,4 @@
-Name:CSC3380
+Name:CSC3380_1
 Section:1
 Credit Hours:3
 Start:3

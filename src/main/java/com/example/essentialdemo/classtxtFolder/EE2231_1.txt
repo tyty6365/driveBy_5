@@ -1,0 +1,16 @@
+Name:EE2231_1
+Section:1
+Credit Hours:2
+Start:7.30
+Morning?:am
+End:8.20
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:false
+F:false
+Room:1236
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:EE2231

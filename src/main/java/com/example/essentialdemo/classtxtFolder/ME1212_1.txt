@@ -1,0 +1,16 @@
+Name:ME1212_1
+Section:1
+Credit Hours:2
+Start:8.30
+Morning?:am
+End:9.20
+EndMorning?:am
+M:true
+T:false
+W:false
+TH:false
+F:false
+Room:1256
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:

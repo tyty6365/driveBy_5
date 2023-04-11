@@ -1,4 +1,4 @@
-Name:ENGL2000
+Name:ENGL2000_3
 Section:3
 Credit Hours:3
 Start:1.30

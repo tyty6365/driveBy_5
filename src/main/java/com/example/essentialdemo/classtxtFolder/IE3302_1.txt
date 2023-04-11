@@ -1,4 +1,4 @@
-Name:IE3302
+Name:IE3302_1
 Section:1
 Credit Hours:3
 Start:7.30

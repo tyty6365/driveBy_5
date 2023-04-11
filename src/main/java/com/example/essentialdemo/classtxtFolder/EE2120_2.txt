@@ -1,4 +1,4 @@
-Name:EE2120
+Name:EE2120_2
 Section:2
 Credit Hours:3
 Start:3

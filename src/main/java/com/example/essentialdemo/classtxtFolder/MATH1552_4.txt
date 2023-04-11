@@ -1,4 +1,4 @@
-Name:MATH1552
+Name:MATH1552_4
 Section:4
 Credit Hours:4
 Start:1.30

@@ -1,4 +1,4 @@
-Name:CE2450
+Name:CE2450_3
 Section:3
 Credit Hours:3
 Start:10.30

@@ -1,4 +1,4 @@
-Name:ME3701
+Name:ME3701_2
 Section:2
 Credit Hours:1
 Start:1.30

@@ -1,0 +1,16 @@
+Name:CHE4198_1
+Section:1
+Credit Hours:3
+Start:11.30
+Morning?:am
+End:12.20
+EndMorning?:pm
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1200
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:CHE3190

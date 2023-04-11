@@ -1,4 +1,4 @@
-Name:BIOL1001
+Name:BIOL1001_1
 Section:1
 Credit Hours:3
 Start:2.30

@@ -1,4 +1,4 @@
-Name:CE3410
+Name:CE3410_1
 Section:1
 Credit Hours:1
 Start:4.30

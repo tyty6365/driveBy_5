@@ -1,4 +1,4 @@
-Name:ME2334
+Name:ME2334_2
 Section:2
 Credit Hours:4
 Start:7.30

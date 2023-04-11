@@ -1,4 +1,4 @@
-Name:EE1801
+Name:EE1801_3
 Section:3
 Credit Hours:2
 Start:3

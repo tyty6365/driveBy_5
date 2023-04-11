@@ -1,0 +1,16 @@
+Name:EE3610_1
+Section:1
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.20
+EndMorning?:am
+M:true
+T:false
+W:true
+TH:false
+F:true
+Room:1240
+Building:PATRICK TAYLOR
+Instructor:Naraghi-Pour
+Prereqs:EE2130

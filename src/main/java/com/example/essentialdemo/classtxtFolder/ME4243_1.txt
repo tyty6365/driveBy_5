@@ -1,0 +1,16 @@
+Name:ME4243_1
+Section:1
+Credit Hours:3
+Start:10.30
+Morning?:am
+End:11.50
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1100
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:ME4433,ME3752,ME3633,ME4244,ME2030

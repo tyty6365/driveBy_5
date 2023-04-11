@@ -84,9 +84,7 @@
 
 <%
     for(Class class1 : pp1){
-        System.out.println(class1.name);
-        System.out.println(class1.room);
-        System.out.println(class1.instructor);
+     System.out.println("Trying out");
 %>
 <div class="card">
     <h2><%= class1.name %></h2>
@@ -101,6 +99,7 @@
     <button class="drop-btn" onclick="dropClass('<%= class1.name %>')">Drop Class</button>
 
 </div>
+
 
 <%
     }

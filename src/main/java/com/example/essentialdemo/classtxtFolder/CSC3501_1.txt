@@ -1,4 +1,4 @@
-Name:CSC3501
+Name:CSC3501_1
 Section:1
 Credit Hours:3
 Start:1.30

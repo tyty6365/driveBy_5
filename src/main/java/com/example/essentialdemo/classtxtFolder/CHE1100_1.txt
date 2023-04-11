@@ -1,0 +1,16 @@
+Name:CHE1100_1
+Section:1
+Credit Hours:1
+Start:4.30
+Morning?:pm
+End:5.20
+EndMorning?:pm
+M:true
+T:false
+W:false
+TH:false
+F:false
+Room:1100
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:

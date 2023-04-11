@@ -1,4 +1,4 @@
-Name:Math 1550
+Name:MATH1550_9
 Section:9
 Credit Hours:5
 Start:9.30

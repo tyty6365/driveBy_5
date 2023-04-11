@@ -1,4 +1,4 @@
-Name:ME2543
+Name:ME2543_2
 Section:2
 Credit Hours:3
 Start:12

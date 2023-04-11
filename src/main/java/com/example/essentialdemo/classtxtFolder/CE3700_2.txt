@@ -1,4 +1,4 @@
-Name:CE3700
+Name:CE3700_2
 Section:2
 Credit Hours:1
 Start:4.30

@@ -1,4 +1,4 @@
-Name:CE2250
+Name:CE2250_1
 Section:1
 Credit Hours:1
 Start:3.30

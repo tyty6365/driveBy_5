@@ -1,4 +1,4 @@
-Name:CSC3102
+Name:CSC3102_1
 Section:1
 Credit Hours:3
 Start:9

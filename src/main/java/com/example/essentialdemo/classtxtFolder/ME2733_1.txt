@@ -1,0 +1,16 @@
+Name:ME2733_1
+Section:1
+Credit Hours:3
+Start:9
+Morning?:am
+End:10.20
+EndMorning?:am
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:0009
+Building:LOCKETT
+Instructor:n/a
+Prereqs:CHEM1201,PHYS2113

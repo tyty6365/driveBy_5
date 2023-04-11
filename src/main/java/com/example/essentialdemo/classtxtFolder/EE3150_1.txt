@@ -1,4 +1,4 @@
-Name:EE3150
+Name:EE3150_1
 Section:1
 Credit Hours:3
 Start:8.30

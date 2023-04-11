@@ -1,4 +1,4 @@
-Name:CSC4103
+Name:CSC4103_2
 Section:2
 Credit Hours:3
 Start:10.30

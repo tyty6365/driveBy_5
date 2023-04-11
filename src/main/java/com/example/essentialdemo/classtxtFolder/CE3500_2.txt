@@ -1,4 +1,4 @@
-Name:CE3500
+Name:CE3500_2
 Section:2
 Credit Hours:3
 Start:9

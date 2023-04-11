@@ -1,4 +1,4 @@
-Name:CSC4402
+Name:CSC4402_1
 Section:1
 Credit Hours:3
 Start:12.00

@@ -1,0 +1,16 @@
+Name:ME3143_1
+Section:1
+Credit Hours:3
+Start:1.30
+Morning?:ppm
+End:2.50
+EndMorning?:pm
+M:false
+T:true
+W:false
+TH:true
+F:false
+Room:1100
+Building:PATRICK TAYLOR
+Instructor:n/a
+Prereqs:ME2543,MATH2070,MATH2090,ME3133

@@ -1,4 +1,4 @@
-Name:ENGL1001
+Name:ENGL1001_41
 Section:41
 Credit Hours:3
 Start:9.30

@@ -17,6 +17,8 @@ public class CivilServlet extends HttpServlet {
         String className = request.getParameter("className");
         System.out.println("User: " + civiuser.eightNine);
         System.out.println("Dropping class:" + className);
+
+
         civiuser.removeClassFromSchedule(civiuser.eightNine,className);
         civiee = civiuser.scheduledClasses;
         request.setAttribute("civiee", civiee);
@@ -47,7 +49,7 @@ public class CivilServlet extends HttpServlet {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + ceClasses+".txt");
+            Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + ceClasses+".txt");
             Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
             ceuser.addClassToSchedule(newClass);
             civiee = ceuser.scheduledClasses;
@@ -57,7 +59,7 @@ public class CivilServlet extends HttpServlet {
                 System.out.println(class1.instructor);
             }
 
-            File classes = new File("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + username);
+            File classes = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
             RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/CivilEngSchedule.jsp");
             dispatcherrr.forward(request, response);
 

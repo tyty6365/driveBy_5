@@ -1,4 +1,4 @@
-Name:CSC1253
+Name:CSC1253_2
 Section:2
 Credit Hours:3
 Start:1.30

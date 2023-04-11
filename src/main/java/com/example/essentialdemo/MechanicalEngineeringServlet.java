@@ -16,6 +16,7 @@ public class MechanicalEngineeringServlet extends HttpServlet {
 
 
 
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User willc = (User) getServletContext().getAttribute("User");
@@ -26,20 +27,27 @@ public class MechanicalEngineeringServlet extends HttpServlet {
         pp = willc.scheduledClasses;
         request.setAttribute("pp", pp);
 
-        // forward the request to the JSP page to display the updated scheduled classes
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/Software.jsp");
         dispatcher.forward(request, response);
     }
 
     protected void redirection(HttpServletRequest request, HttpServletResponse response, ArrayList<Class> a) throws ServletException, IOException {
-//
         request.setAttribute("pp", a);
         if (a!=null) {
             RequestDispatcher dispatcherr = request.getRequestDispatcher("WEB-INF/Software.jsp");
             dispatcherr.forward(request, response);
-//
         }
     }
+
+//    protected void popUpMessages(HttpServletRequest request, HttpServletResponse response, String a) throws ServletException, IOException {
+//        request.setAttribute("message", a);
+//        if (a!=null) {
+//            RequestDispatcher popup = request.getRequestDispatcher("WEB-INF/Software.jsp");
+//            popup.forward(request, response);
+//        }
+//    }
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -53,17 +61,32 @@ public class MechanicalEngineeringServlet extends HttpServlet {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
-            Course newCourse = new Course("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + meClasses+".txt");
+            Course newCourse = new Course("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + meClasses+".txt");
            Class newClass = new Class(newCourse.name, newCourse.section, newCourse.creditHours, newCourse.days, newCourse.start, newCourse.morning, newCourse.end, newCourse.endMorning, newCourse.building, newCourse.room, newCourse.instructor, newCourse.prereqs);
-            willc.addClassToSchedule(newClass);
+           String message = willc.addClassToSchedule(newClass);
+            System.out.println(message);
              pp = willc.scheduledClasses;
-            for( Class class1 : pp){
-                System.out.println(class1.name);
-                System.out.println(class1.room);
-                System.out.println(class1.instructor);
-            }
+            if(message.equals("Did not pass prereqcheck")) {
+                request.setAttribute("message", message);
+          }
 
-            File classes = new File("/Users/tscott/Documents/GitHub/essentialDemoOff/src/main/java/com/example/essentialdemo/classtxtFolder/" + username);
+//            if(message.equals("Did not pass prereqcheck")) {
+//                request.setAttribute("errorMessage", message);
+//                RequestDispatcher errorMesas = request.getRequestDispatcher("WEB-INF/Software.jsp");
+//                errorMesas.forward(request, response);
+//            } else {
+//                pp = willc.scheduledClasses;
+//                File classes = new File("C:\\Users\\willc\\IdeaProjects\\essentialDemoOff3\\src\\main\\java\\com\\example\\essentialdemo\\classtxtFolder\\" + username);
+//                RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
+//                dispatcherrr.forward(request, response);
+//            }
+//            for( Class class1 : pp){
+//                System.out.println(class1.name);
+//                System.out.println(class1.room);
+//                System.out.println(class1.instructor);
+//            }
+//
+
             RequestDispatcher dispatcherrr = request.getRequestDispatcher("WEB-INF/MechanicalEngineering.jsp");
             dispatcherrr.forward(request, response);
 

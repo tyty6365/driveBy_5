@@ -1,4 +1,4 @@
-Name:CSC1254
+Name:CSC1254_1
 Section:1
 Credit Hours:3
 Start:12.00
