@@ -127,6 +127,7 @@
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_che_flowchart.pdf"> Mechanical Engineering FlowChart 23-24 </a>
 <form action = "MechanicalEngineeringServlet" method = post>
     <button class="add-button" value = "schedule" name="ME">See Schedule</button>
+    <button class="add-button" value = "flowchart" name="ME"> Back to the FlowChart Page </button>
     <div class ="coreclasses">
         <strong>General Classes</strong>
     </div>
@@ -273,6 +274,7 @@
     </div>
 
 </form>
+
 
 
 

@@ -119,6 +119,7 @@
 <a href ="https://www.lsu.edu/eng/current/resources/flowcharts/2023-2024_ce_flowchart.pdf"> Civil Engineering FlowChart 23-24 </a>
 <form action = "CivilServlet" method = post>
   <button class="add-button" value = "schedule" name="CiviE">See Schedule</button>
+  <button class="add-button" value = "flowchart" name="CiviE"> Back to the FlowChart Page </button>
   <div class ="coreclasses">
     <strong>General Classes</strong>
   </div>
@@ -181,7 +182,7 @@
   <div class="card-container">
     <div class="card">
       <div class="card-header">CE 2700</div>
-      <div class="card-body">Time: 5:30p - 6:20a<br>
+      <div class="card-body">Time: 5:30p - 6:20p<br>
         Days: F
         <br>
       </div>

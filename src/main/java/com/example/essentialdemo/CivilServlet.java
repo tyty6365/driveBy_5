@@ -45,7 +45,14 @@ public class CivilServlet extends HttpServlet {
         civiee = ceuser.scheduledClasses;
         if(ceClasses.equals("schedule")){
             redirection(request, response, civiee);
-        }else {
+        }else if(ceClasses.equals("flowchart")) {
+            RequestDispatcher flow = request.getRequestDispatcher("WEB-INF/flowchart.jsp");
+            flow.forward(request, response);
+        }else if(ceClasses.equals("jsp")){
+            RequestDispatcher sched = request.getRequestDispatcher("WEB-INF/CivilEngineering.jsp");
+            sched.forward(request, response);
+        }
+        else {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 

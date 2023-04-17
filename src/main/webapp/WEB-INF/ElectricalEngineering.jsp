@@ -119,6 +119,7 @@
     FlowChart 23/24 </a>
 <form action = "EEServlet" method = post>
     <button class="add-button" value = "schedule" name="EE">See Schedule</button>
+    <button class="add-button" value = "flowchart" name="EE"> Back to the FlowChart Page </button>
     <div class ="coreclasses">
         <strong>General Classes</strong>
     </div>

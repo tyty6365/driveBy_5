@@ -55,6 +55,13 @@
             cursor: pointer;
             margin-top: 24px;
         }
+        body {
+            background-image: url("https://media2.giphy.com/media/4Dej66ClOO25KofXv6/giphy.gif?cid=ecf05e47klx1vxmbrwxezbei6yqb9a0urpb5l7u3b3vf6mxx&rid=giphy.gif&ct=g");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
@@ -76,8 +83,13 @@
     </script>
 </head>
 <body>
-<h1>Selected Classes:</h1>
 
+<h1>Selected Classes:</h1>
+<form action ="MechanicalEngineeringServlet" method = post>
+<h2>
+    <button class="add-button" value="jsp" name="ME">Back to Mechanical Engineering Scheduling Page</button>
+</h2>
+</form>
 <%
     System.out.println("JSP page displayed");
     User willc = (User) request.getAttribute("User");

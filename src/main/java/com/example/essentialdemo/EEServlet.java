@@ -44,7 +44,14 @@ public class EEServlet extends HttpServlet {
          ee = eeuser.scheduledClasses;
          if(eeClasses.equals("schedule")){
             redirection(request, response, ee);
-        }else {
+        }else if(eeClasses.equals("flowchart")) {
+             RequestDispatcher flow = request.getRequestDispatcher("WEB-INF/flowchart.jsp");
+             flow.forward(request, response);
+         }else if(eeClasses.equals("jsp")){
+             RequestDispatcher sched = request.getRequestDispatcher("WEB-INF/ElectricalEngineering.jsp");
+             sched.forward(request, response);
+         }
+         else {
             String username = (String) getServletContext().getAttribute("Username");
 //            System.out.println(username);
 
