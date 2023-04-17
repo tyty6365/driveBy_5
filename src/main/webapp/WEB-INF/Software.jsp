@@ -98,11 +98,13 @@
 %>
 
 <%
+
     for(Class class1 : pp1){
      System.out.println("Trying out");
+        int index = class1.name.indexOf("_");
 %>
 <div class="card">
-    <h2><%= class1.name %></h2>
+    <h2><%= class1.name.substring(0,index) %></h2>
     <p><%= "Section: " + class1.section %></p>
     <p><%= "Time: " + class1.cTime.start.fixedTime + " - " + class1.cTime.end.fixedTime + "   " + class1.cTime.dWeek %></p>
     <p><%= "Instructor: " + class1.instructor %></p>

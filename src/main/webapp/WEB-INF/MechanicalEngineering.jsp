@@ -120,6 +120,25 @@
         background-attachment: fixed;
 
     }
+    .popup {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+        padding: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+
+    .popup__close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+    }
 </style>
 <body>
 
@@ -295,15 +314,10 @@
         }
     %>
 
-</script>
+    </script>
 
-<%--<script>--%>
-<%--    // JavaScript code to display the message--%>
-<%--    var message = '<%= request.getAttribute("message") %>';--%>
-<%--    if (message !== null && message !== '') {--%>
-<%--        alert(message);--%>
-<%--    }--%>
-<%--</script>--%>
+
+
 
 </html>
 

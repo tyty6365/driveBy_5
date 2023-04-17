@@ -72,7 +72,7 @@ public class ButtonsPage extends HttpServlet {
                 dispatcher10.forward(request, response);
                 break;
 
-                default:
+            default:
                 response.sendRedirect("error.html");
                 System.out.println("default");
                 break;
@@ -84,4 +84,3 @@ public class ButtonsPage extends HttpServlet {
     public void destroy() {
     }
 }
-

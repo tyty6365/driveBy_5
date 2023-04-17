@@ -67,6 +67,14 @@ public class CivilServlet extends HttpServlet {
                 request.setAttribute("message", "Time Discrepancy not passed.");
             }else if(message.equals("Did not pass HoursCheck")) {
                 request.setAttribute("message", "You went over your 19 credit hours limit");
+            }else if (message.equals("Successfully added class to schedule!")){
+                request.setAttribute("message", "Class Added Successfully!");
+            }
+            else if(message.equals("You have already scheduled this class")){
+                request.setAttribute("message", "You have already scheduled this class!");
+            }
+            else if(message.equals("You have already taken this class.")){
+                request.setAttribute("message", "You have already taken this class.");
             }
 
 
